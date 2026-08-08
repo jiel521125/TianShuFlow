@@ -38,10 +38,10 @@
 
 ### MINIMAX 模型配置
 - Model: `MiniMax-M3` / `MiniMax-M2.7`
-- APIKEY: `sk-cp-csgV97AwvphP9tOxG6mBIjbrxnUDJSmcruTTlOsQ2DuecptOBhfjYnman6BwlepOHhFy_WP9fLmFV1fB36c66zVH9il4vzn5V6x_EZb48LM8IhTgB-JKADM`
+- APIKEY: `sk-cp-csgV97AwvphP9tOxG6mBIjbrxnUDJSmcruTTlOsQ2DuecXXXXXXpOHhFy_WP9fLmFV1fB36c66zVH9il4vzn5V6x_EZb48LM8IhTgB-JKADM`
 - URL: `https://api.minimax.cn/v1/` / `https://api.minimaxi.com/anthropic`
 
 ### DEEPSEEK 模型配置
 - Model: `deepseek-v4-flash` / `deepseek-v4-pro`
-- APIKEY: `sk-9280980841cb46cfbcf1cbd8700b1ecf`
+- APIKEY: `sk-9280980841cb4xxxxxxx1ecf`
 - URL: `https://api.deepseek.com/v1/` / `https://api.deepseeki.com/anthropic`
