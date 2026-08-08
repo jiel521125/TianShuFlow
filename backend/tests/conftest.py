@@ -1,0 +1,248 @@
+"""Test configuration for the backend test suite.
+
+Sets up sys.path and pre-mocks modules that would cause circular import
+issues when unit-testing lightweight config/registry code in isolation.
+"""
+
+from __future__ import annotations
+
+import importlib.util
+import os
+import sys
+import uuid
+from pathlib import Path
+from types import SimpleNamespace
+from unittest.mock import MagicMock
+
+import pytest
+
+# Make 'app' and 'tianshu' importable from any working directory
+sys.path.insert(0, str(Path(__file__).parent.parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "scripts"))
+
+# Break the circular import chain that exists in production code:
+#   tianshu.subagents.__init__
+#     -> .executor (SubagentExecutor, SubagentResult)
+#       -> tianshu.agents.thread_state
+#         -> tianshu.agents.__init__
+#           -> lead_agent.agent
+#             -> subagent_limit_middleware
+#               -> tianshu.subagents.executor  <-- circular!
+#
+# By injecting a mock for tianshu.subagents.executor *before* any test module
+# triggers the import, __init__.py's "from .executor import ..." succeeds
+# immediately without running the real executor module.
+_executor_mock = MagicMock()
+_executor_mock.SubagentExecutor = MagicMock
+_executor_mock.SubagentResult = MagicMock
+_executor_mock.SubagentStatus = MagicMock
+_executor_mock.MAX_CONCURRENT_SUBAGENTS = 3
+_executor_mock.get_background_task_result = MagicMock()
+
+sys.modules["tianshu.subagents.executor"] = _executor_mock
+
+
+@pytest.fixture()
+def provisioner_module():
+    """Load docker/provisioner/app.py as an importable test module.
+
+    Shared by test_provisioner_kubeconfig and test_provisioner_pvc_volumes so
+    that any change to the provisioner entry-point path or module name only
+    needs to be updated in one place.
+    """
+    repo_root = Path(__file__).resolve().parents[2]
+    module_path = repo_root / "docker" / "provisioner" / "app.py"
+    spec = importlib.util.spec_from_file_location("provisioner_app_test", module_path)
+    assert spec is not None
+    assert spec.loader is not None
+    module = importlib.util.module_from_spec(spec)
+    previous_module = sys.modules.get(spec.name)
+    sys.modules[spec.name] = module
+    try:
+        spec.loader.exec_module(module)
+        yield module
+    finally:
+        if previous_module is None:
+            sys.modules.pop(spec.name, None)
+        else:
+            sys.modules[spec.name] = previous_module
+
+
+# ---------------------------------------------------------------------------
+# Auto-set user context for every test unless marked no_auto_user
+# ---------------------------------------------------------------------------
+#
+# Repository methods read ``user_id`` from a contextvar by default
+# (see ``tianshu.runtime.user_context``). Without this fixture, every
+# pre-existing persistence test would raise RuntimeError because the
+# contextvar is unset. The fixture sets a default test user on every
+# test; tests that explicitly want to verify behaviour *without* a user
+# context should mark themselves ``@pytest.mark.no_auto_user``.
+
+
+@pytest.fixture(autouse=True)
+def _reset_skill_storage_singleton():
+    """Reset the SkillStorage singleton between tests to prevent cross-test contamination."""
+    try:
+        from tianshu.skills.storage import reset_skill_storage
+    except ImportError:
+        yield
+        return
+    reset_skill_storage()
+    try:
+        yield
+    finally:
+        reset_skill_storage()
+
+
+@pytest.fixture(autouse=True)
+def _reset_frozen_checkpoint_channel_mode(monkeypatch):
+    """Reset the process-global frozen checkpoint channel mode between tests.
+
+    Production treats ``checkpoint_channel_mode`` (and the delta
+    ``snapshot_frequency`` frozen alongside it) as restart-required: the
+    first client/app freezes it for the process. The test suite builds many
+    clients and apps with different modes in one process, so the freeze must
+    not leak across tests. Mirrors the per-test ``monkeypatch.setattr``
+    resets already used in test_client.py / test_lead_agent_model_resolution.py.
+    """
+    from tianshu.runtime import checkpoint_mode
+
+    monkeypatch.setattr(checkpoint_mode, "_frozen_checkpoint_channel_mode", None)
+    monkeypatch.setattr(checkpoint_mode, "_frozen_checkpoint_snapshot_frequency", None)
+    yield
+
+
+@pytest.fixture(autouse=True)
+def _restore_title_config_singleton():
+    """Reset ``_title_config`` to its pristine default after every test.
+
+    ``AppConfig.from_file()`` writes the on-disk ``title`` block into the
+    module-level singleton (``config/app_config.py`` calls
+    ``load_title_config_from_dict``). Any test that loads the real
+    ``config.yaml`` therefore leaves the singleton in a state that
+    ``test_title_middleware_core_logic.py`` does not expect; that suite
+    relies on the pristine ``TitleConfig()`` default (``enabled=True``).
+    We restore the default after every test so test files stay
+    independent regardless of order.
+    """
+    try:
+        from tianshu.config.title_config import reset_title_config
+    except ImportError:
+        yield
+        return
+
+    try:
+        yield
+    finally:
+        reset_title_config()
+
+
+@pytest.fixture(autouse=True)
+def _auto_user_context(request):
+    """Inject a default ``test-user-autouse`` into the contextvar.
+
+    Opt-out via ``@pytest.mark.no_auto_user``. Uses lazy import so that
+    tests which don't touch the persistence layer never pay the cost
+    of importing runtime.user_context.
+    """
+    if request.node.get_closest_marker("no_auto_user"):
+        yield
+        return
+
+    try:
+        from tianshu.runtime.user_context import (
+            reset_current_user,
+            set_current_user,
+        )
+    except ImportError:
+        yield
+        return
+
+    user = SimpleNamespace(id="test-user-autouse", email="test@local")
+    token = set_current_user(user)
+    try:
+        yield
+    finally:
+        reset_current_user(token)
+
+
+@pytest.fixture()
+def deermem_pg_backend_config():
+    """DeerMem PostgreSQL ``backend_config`` on an isolated temporary schema.
+
+    Skipped unless ``TIANSHU_TEST_POSTGRES_URL`` is set (the repo convention
+    for live-PostgreSQL tests; see ``test_pg_schema_integration.py``). The
+    schema is created before the test and dropped with ``CASCADE`` afterwards,
+    so runs stay isolated from production data and from each other.
+    """
+    url = os.getenv("TIANSHU_TEST_POSTGRES_URL")
+    if not url:
+        pytest.skip("set TIANSHU_TEST_POSTGRES_URL to run live PostgreSQL deermem tests")
+
+    import psycopg
+
+    schema = f"deermem_test_{uuid.uuid4().hex[:12]}"
+    with psycopg.connect(url, autocommit=True) as conn:
+        conn.execute(f'CREATE SCHEMA "{schema}"')
+    try:
+        yield {"storage_class": "postgres", "postgres_url": url, "postgres_schema": schema}
+    finally:
+        with psycopg.connect(url, autocommit=True) as conn:
+            conn.execute(f'DROP SCHEMA IF EXISTS "{schema}" CASCADE')
+
+
+@pytest.fixture()
+async def pg_test_engine():
+    """Live-PostgreSQL ORM engine on an isolated temporary schema.
+
+    Shared by repository / persistence tests that used to run on a throwaway
+    SQLite database. Initializes the app engine (tables + migrations) against
+    a fresh per-test schema and disposes it afterwards; the schema is dropped
+    with ``CASCADE`` in teardown. Skipped unless ``TIANSHU_TEST_POSTGRES_URL``
+    is set (the repo convention for live-PostgreSQL tests).
+    """
+    url = os.getenv("TIANSHU_TEST_POSTGRES_URL")
+    if not url:
+        pytest.skip("set TIANSHU_TEST_POSTGRES_URL to run live PostgreSQL tests")
+
+    import psycopg
+
+    from tianshu.config.database_config import DatabaseConfig
+    from tianshu.persistence.engine import close_engine, init_engine_from_config
+
+    schema = f"pgtest_{uuid.uuid4().hex[:12]}"
+    with psycopg.connect(url, autocommit=True) as conn:
+        conn.execute(f'CREATE SCHEMA "{schema}"')
+    try:
+        db_config = DatabaseConfig(backend="postgres", postgres_url=url, postgres_schema=schema)
+        await init_engine_from_config(db_config)
+        yield schema
+    finally:
+        await close_engine()
+        with psycopg.connect(url, autocommit=True) as conn:
+            conn.execute(f'DROP SCHEMA IF EXISTS "{schema}" CASCADE')
+
+
+@pytest.fixture()
+def windows_selector_loop():
+    """Force a Selector event loop on Windows for TestClient-based E2E tests.
+
+    psycopg's async connection pool refuses the default Windows Proactor event
+    loop (``Psycopg cannot use the 'ProactorEventLoop'``). The Gateway lifespan
+    bootstraps the postgres engine/store/checkpointer inside the TestClient
+    portal loop, so postgres-backed HTTP E2E tests must run their TestClient
+    window on the Selector loop. No-op on non-Windows platforms.
+    """
+    if sys.platform != "win32":
+        yield
+        return
+
+    import asyncio
+
+    old_policy = asyncio.get_event_loop_policy()
+    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+    try:
+        yield
+    finally:
+        asyncio.set_event_loop_policy(old_policy)

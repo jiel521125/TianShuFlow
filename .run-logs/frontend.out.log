@@ -1,0 +1,2101 @@
+== frontend dev server starting ==
+
+> tian-shu-frontend@2.1.0 dev E:\QClaw\DeerFlow\frontend
+> next dev --turbo
+
+▲ Next.js 16.2.11 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.220.104:3000
+- Environments: .env.local
+✓ Ready in 860ms
+- [36minfo[0m [nextra] You have Next.js i18n enabled, read here https://nextjs.org/docs/app/building-your-application/routing/internationalization for the docs.
+- Experiments (use with caution):
+  · optimizePackageImports
+
+○ Compiling / ...
+ GET / 200 in 13.5s (next.js: 6.9s, application-code: 6.6s)
+ GET /@vite/client 404 in 4.3s (next.js: 3.1s, application-code: 1231ms)
+ GET / 200 in 894ms (next.js: 72ms, application-code: 822ms)
+✓ Finished filesystem cache database compaction in 32.2s
+ GET /workspace 200 in 1327ms (next.js: 392ms, application-code: 935ms)
+ GET /login 200 in 197ms (next.js: 98ms, application-code: 99ms)
+ GET /login 200 in 63ms (next.js: 12ms, application-code: 51ms)
+ GET /workspace 200 in 110ms (next.js: 31ms, application-code: 79ms)
+ GET /workspace/chats/new 200 in 1710ms (next.js: 1668ms, application-code: 42ms)
+ GET /workspace/chats/new 200 in 491ms (next.js: 441ms, application-code: 50ms)
+[browser] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[browser] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[browser] [tian-shu] Dropped unsupported LangGraph run option: streamResumable (src/core/api/stream-mode.ts:48:15)
+ GET /workspace/chats/772662ce-1105-4f88-8f01-7417c06bab13 200 in 131ms (next.js: 99ms, application-code: 32ms)
+ GET /workspace/chats/new 200 in 134ms (next.js: 102ms, application-code: 32ms)
+ GET /workspace/chats/new 200 in 61ms (next.js: 48ms, application-code: 12ms)
+ GET /workspace/chats/4e376ebf-730d-4545-ae64-648b3732909d 200 in 83ms (next.js: 52ms, application-code: 31ms)
+ GET /workspace/chats/80eabb6c-14c4-4889-be2d-24798d85b6e9 200 in 58ms (next.js: 37ms, application-code: 21ms)
+ GET /workspace/chats/4e376ebf-730d-4545-ae64-648b3732909d 200 in 55ms (next.js: 37ms, application-code: 18ms)
+ GET /workspace/chats/772662ce-1105-4f88-8f01-7417c06bab13 200 in 61ms (next.js: 43ms, application-code: 18ms)
+ GET /workspace/chats/new 200 in 72ms (next.js: 43ms, application-code: 28ms)
+✓ Compiled in 5.9s
+ GET /workspace/chats/bc0ca39d-8a5c-421b-9e68-d8f147390b25 200 in 1641ms (next.js: 1218ms, application-code: 423ms)
+✓ Compiled in 5.7s
+ GET /workspace/chats/bc0ca39d-8a5c-421b-9e68-d8f147390b25 200 in 2.0s (next.js: 1364ms, application-code: 682ms)
+✓ Compiled in 5.3s
+ GET /workspace/chats/bc0ca39d-8a5c-421b-9e68-d8f147390b25 200 in 1291ms (next.js: 972ms, application-code: 319ms)
+✓ Finished filesystem cache database compaction in 15.8s
+✓ Compiled in 3.3s
+ GET /workspace/chats/bc0ca39d-8a5c-421b-9e68-d8f147390b25 200 in 1241ms (next.js: 910ms, application-code: 331ms)
+✓ Compiled in 4.8s
+ GET /workspace/chats/bc0ca39d-8a5c-421b-9e68-d8f147390b25 200 in 989ms (next.js: 645ms, application-code: 344ms)
+✓ Compiled in 4.6s
+ GET /workspace/chats/bc0ca39d-8a5c-421b-9e68-d8f147390b25 200 in 1825ms (next.js: 1041ms, application-code: 784ms)
+ GET / 200 in 1635ms (next.js: 201ms, application-code: 1434ms)
+ GET /workspace/chats/new 200 in 143ms (next.js: 101ms, application-code: 42ms)
+ GET /workspace/workspace 200 in 182ms (next.js: 154ms, application-code: 28ms)
+ GET /workspace/workspace 200 in 831ms (next.js: 12ms, application-code: 819ms)
+ GET /@vite/client 404 in 50ms (next.js: 18ms, application-code: 32ms)
+ GET /workspace/chats 200 in 153ms (next.js: 135ms, application-code: 18ms)
+ GET /workspace/chats/2055c778-4064-4d90-925d-e88c79f80ed5 200 in 58ms (next.js: 41ms, application-code: 17ms)
+ GET /workspace/chats 200 in 27ms (next.js: 8ms, application-code: 19ms)
+ GET / 200 in 88ms (next.js: 7ms, application-code: 80ms)
+ GET /workspace/chats 200 in 347ms (next.js: 38ms, application-code: 309ms)
+ GET /@vite/client 404 in 35ms (next.js: 5ms, application-code: 30ms)
+ GET /workspace/chats/5cc77602-c414-40ad-ba54-0f8a4ec41064 200 in 87ms (next.js: 66ms, application-code: 21ms)
+✓ Compiled in 1237ms
+ GET /workspace/chats/5cc77602-c414-40ad-ba54-0f8a4ec41064 200 in 326ms (next.js: 255ms, application-code: 70ms)
+ GET /workspace/chats/5cc77602-c414-40ad-ba54-0f8a4ec41064 200 in 715ms (next.js: 44ms, application-code: 672ms)
+ GET /@vite/client 404 in 50ms (next.js: 12ms, application-code: 38ms)
+ GET /workspace/chats/80eabb6c-14c4-4889-be2d-24798d85b6e9 200 in 56ms (next.js: 40ms, application-code: 16ms)
+ GET /workspace/chats/80eabb6c-14c4-4889-be2d-24798d85b6e9 307 in 634ms (next.js: 43ms, application-code: 592ms)
+ GET /login 200 in 364ms (next.js: 70ms, application-code: 294ms)
+ GET /workspace 200 in 887ms (next.js: 529ms, application-code: 358ms)
+ GET /workspace/chats/new 200 in 223ms (next.js: 60ms, application-code: 163ms)
+ GET /workspace/chats/new 200 in 106ms (next.js: 23ms, application-code: 83ms)
+ GET /workspace/chats/5cc77602-c414-40ad-ba54-0f8a4ec41064 200 in 116ms (next.js: 61ms, application-code: 55ms)
+✓ Compiled in 1033ms
+ GET /workspace/chats/80eabb6c-14c4-4889-be2d-24798d85b6e9 200 in 451ms (next.js: 194ms, application-code: 257ms)
+ GET /workspace/chats/5cc77602-c414-40ad-ba54-0f8a4ec41064 200 in 451ms (next.js: 247ms, application-code: 204ms)
+ GET /workspace/chats/80eabb6c-14c4-4889-be2d-24798d85b6e9 200 in 154ms (next.js: 8ms, application-code: 146ms)
+ GET /workspace/chats/5cc77602-c414-40ad-ba54-0f8a4ec41064 200 in 154ms (next.js: 50ms, application-code: 104ms)
+ GET /workspace/chats/5cc77602-c414-40ad-ba54-0f8a4ec41064 200 in 71ms (next.js: 31ms, application-code: 39ms)
+ GET /workspace/chats/80eabb6c-14c4-4889-be2d-24798d85b6e9 200 in 72ms (next.js: 6ms, application-code: 66ms)
+ GET / 200 in 385ms (next.js: 61ms, application-code: 325ms)
+ GET /workspace/chats/80eabb6c-14c4-4889-be2d-24798d85b6e9 200 in 787ms (next.js: 68ms, application-code: 719ms)
+ GET /@vite/client 404 in 46ms (next.js: 12ms, application-code: 34ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <TooltipProvider data-slot="tooltip-pr..." delayDuration={0}>
+      <TooltipProviderProvider scope={undefined} isOpenDelayedRef={{current:true}} delayDuration={0} ...>
+        <div data-slot="sidebar-wr..." style={{...}} className="group/side...">
+          <WorkspaceSidebar>
+            <Sidebar variant="sidebar" collapsible="icon">
+              <div className="group peer..." data-state="expanded" data-collapsible="" data-variant="sidebar" ...>
+                <div>
+                <div data-slot="sidebar-co..." className="fixed inse...">
+                  <div data-sidebar="sidebar" data-slot="sidebar-inner" className="bg-sidebar...">
+                    <SidebarHeader className="py-0">
+                      <div data-slot="sidebar-he..." data-sidebar="header" className="flex flex-...">
+                        <WorkspaceHeader>
+                          <div className="group/work...">
+                            <div className="flex items...">
+                              <div>
+                              <SidebarTrigger>
+                                <Button data-sidebar="trigger" data-slot="sidebar-tr..." variant="ghost" size="icon" ...>
+                                  <button
+                                    data-slot="sidebar-trigger"
+                                    data-variant="ghost"
+                                    data-size="icon"
+                                    className={"inline-flex items-center justify-center gap-2 whitespace-nowrap round..."}
+                                    data-sidebar="trigger"
+                                    onClick={function onClick}
+-                                   data-trae-ref="e0"
+                                  >
+                          <SidebarMenu>
+                            <ul data-slot="sidebar-menu" data-sidebar="menu" className="flex w-ful...">
+                              <SidebarMenuItem>
+                                <li
+                                  data-slot="sidebar-menu-item"
+                                  data-sidebar="menu-item"
+                                  className="group/menu-item relative"
+-                                 data-trae-ref="e8"
+                                >
+                                  ...
+                                    <Slot.SlotClone data-slot="sidebar-me..." data-sidebar="menu-button" ...>
+                                      <LinkComponent className={"peer/men..."} href="/workspace..." ...>
+                                        <a
+                                          className={"peer/menu-button flex w-full items-center gap-2 overflow-hidden..."}
+                                          data-slot="sidebar-menu-button"
+                                          data-sidebar="menu-button"
+                                          data-size="default"
+                                          data-active={false}
+                                          ref={function}
+                                          onClick={function onClick}
+                                          onMouseEnter={function onMouseEnter}
+                                          onTouchStart={function onTouchStart}
+                                          href="/workspace/chats/new"
+-                                         data-trae-ref="e1"
+                                        >
+                    ...
+                      <WorkspaceNavChatList>
+                        <SidebarGroup className="pt-1">
+                          <div data-slot="sidebar-group" data-sidebar="group" className="relative f...">
+                            <SidebarMenu>
+                              <ul data-slot="sidebar-menu" data-sidebar="menu" className="flex w-ful...">
+                                <SidebarMenuItem>
+                                  <li
+                                    data-slot="sidebar-menu-item"
+                                    data-sidebar="menu-item"
+                                    className="group/menu-item relative"
+-                                   data-trae-ref="e9"
+                                  >
+                                    ...
+                                      <Slot.SlotClone data-slot="sidebar-me..." data-sidebar="menu-button" ...>
+                                        <LinkComponent className={"peer/men..."} href="/workspace..." ...>
+                                          <a
+                                            className={"peer/menu-button flex w-full items-center gap-2 overflow-hidd..."}
+                                            data-slot="sidebar-menu-button"
+                                            data-sidebar="menu-button"
+                                            data-size="default"
+                                            data-active={false}
+                                            ref={function}
+                                            onClick={function onClick}
+                                            onMouseEnter={function onMouseEnter}
+                                            onTouchStart={function onTouchStart}
+                                            href="/workspace/chats"
+-                                           data-trae-ref="e2"
+                                          >
+                                <SidebarMenuItem>
+                                  <li
+                                    data-slot="sidebar-menu-item"
+                                    data-sidebar="menu-item"
+                                    className="group/menu-item relative"
+-                                   data-trae-ref="e10"
+                                  >
+                                    ...
+                                      <Slot.SlotClone data-slot="sidebar-me..." data-sidebar="menu-button" ...>
+                                        <LinkComponent className={"peer/men..."} href="/workspace..." ...>
+                                          <a
+                                            className={"peer/menu-button flex w-full items-center gap-2 overflow-hidd..."}
+                                            data-slot="sidebar-menu-button"
+                                            data-sidebar="menu-button"
+                                            data-size="default"
+                                            data-active={false}
+                                            ref={function}
+                                            onClick={function onClick}
+                                            onMouseEnter={function onMouseEnter}
+                                            onTouchStart={function onTouchStart}
+                                            href="/workspace/agents"
+-                                           data-trae-ref="e3"
+                                          >
+                                <SidebarMenuItem>
+                                  <li
+                                    data-slot="sidebar-menu-item"
+                                    data-sidebar="menu-item"
+                                    className="group/menu-item relative"
+-                                   data-trae-ref="e11"
+                                  >
+                                    ...
+                                      <Slot.SlotClone data-slot="sidebar-me..." data-sidebar="menu-button" ...>
+                                        <LinkComponent className={"peer/men..."} href="/workspace..." ...>
+                                          <a
+                                            className={"peer/menu-button flex w-full items-center gap-2 overflow-hidd..."}
+                                            data-slot="sidebar-menu-button"
+                                            data-sidebar="menu-button"
+                                            data-size="default"
+                                            data-active={false}
+                                            ref={function}
+                                            onClick={function onClick}
+                                            onMouseEnter={function onMouseEnter}
+                                            onTouchStart={function onTouchStart}
+                                            href="/workspace/scheduled-tasks"
+-                                           data-trae-ref="e4"
+                                          >
+                                <SidebarMenuItem>
+                                  <li
+                                    data-slot="sidebar-menu-item"
+                                    data-sidebar="menu-item"
+                                    className="group/menu-item relative"
+-                                   data-trae-ref="e12"
+                                  >
+                                    ...
+                                      <Slot.SlotClone data-slot="sidebar-me..." data-sidebar="menu-button" ...>
+                                        <LinkComponent className={"peer/men..."} href="/workspace..." ...>
+                                          <a
+                                            className={"peer/menu-button flex w-full items-center gap-2 overflow-hidd..."}
+                                            data-slot="sidebar-menu-button"
+                                            data-sidebar="menu-button"
+                                            data-size="default"
+                                            data-active={false}
+                                            ref={function}
+                                            onClick={function onClick}
+                                            onMouseEnter={function onMouseEnter}
+                                            onTouchStart={function onTouchStart}
+                                            href="/workspace/workspace"
+-                                           data-trae-ref="e5"
+                                          >
+                    <SidebarFooter>
+                      <div data-slot="sidebar-fo..." data-sidebar="footer" className="flex flex-...">
+                        <WorkspaceNavMenu>
+                          <SidebarMenu className="w-full">
+                            <ul data-slot="sidebar-menu" data-sidebar="menu" className="flex min-w...">
+                              <SidebarMenuItem>
+                                <li
+                                  data-slot="sidebar-menu-item"
+                                  data-sidebar="menu-item"
+                                  className="group/menu-item relative"
+-                                 data-trae-ref="e13"
+                                >
+                                  <SidebarMenuButton size="lg" className="pointer-ev...">
+                                    <button
+                                      data-slot="sidebar-menu-button"
+                                      data-sidebar="menu-button"
+                                      data-size="lg"
+                                      data-active={false}
+                                      className={"peer/menu-button flex w-full items-center gap-2 overflow-hidden rou..."}
+-                                     data-trae-ref="e6"
+                                    >
+                    ...
+          ...
+            <div className="relative m..." style={{...}}>
+              <div className="relative s..." id="chat">
+                <div className="relative f...">
+                  <header className="absolute t...">
+                    <SidebarTrigger>
+                    <div>
+                    <div className="flex shrin...">
+                      <ThreadScheduledTasksLink threadId="80eabb6c-1...">
+                        <Button variant="outline" size="sm" asChild={true}>
+                          <Slot.Slot data-slot="button" data-variant="outline" data-size="sm" className={"inline-f..."}>
+                            <Slot.SlotClone data-slot="button" data-variant="outline" data-size="sm" ...>
+                              <LinkComponent aria-label="定时任务" href="/workspace..." data-slot="button" ...>
+                                <a
+                                  aria-label="定时任务"
+                                  data-slot="button"
+                                  data-variant="outline"
+                                  data-size="sm"
+                                  className={"inline-flex items-center justify-center whitespace-nowrap text-sm font-..."}
+                                  ref={function}
+                                  onClick={function onClick}
+                                  onMouseEnter={function onMouseEnter}
+                                  onTouchStart={function onTouchStart}
+                                  href="/workspace/scheduled-tasks?thread_id=80eabb6c-14c4-4889-be2d-24798d85b6e9"
+-                                 data-trae-ref="e7"
+                                >
+                      ...
+                  ...
+ 
+ GET /workspace/chats/2055c778-4064-4d90-925d-e88c79f80ed5 200 in 81ms (next.js: 55ms, application-code: 26ms)
+ GET /workspace/chats/new 200 in 130ms (next.js: 41ms, application-code: 89ms)
+ GET /@vite/client 404 in 36ms (next.js: 4ms, application-code: 31ms)
+ GET /workspace/scheduled-tasks 200 in 330ms (next.js: 66ms, application-code: 265ms)
+ GET /@vite/client 404 in 38ms (next.js: 5ms, application-code: 33ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <TooltipProvider data-slot="tooltip-pr..." delayDuration={0}>
+      <TooltipProviderProvider scope={undefined} isOpenDelayedRef={{current:true}} delayDuration={0} ...>
+        <div data-slot="sidebar-wr..." style={{...}} className="group/side...">
+          <WorkspaceSidebar>
+            <Sidebar variant="sidebar" collapsible="icon">
+              <div className="group peer..." data-state="expanded" data-collapsible="" data-variant="sidebar" ...>
+                <div>
+                <div data-slot="sidebar-co..." className="fixed inse...">
+                  <div data-sidebar="sidebar" data-slot="sidebar-inner" className="bg-sidebar...">
+                    <SidebarHeader className="py-0">
+                      <div data-slot="sidebar-he..." data-sidebar="header" className="flex flex-...">
+                        <WorkspaceHeader>
+                          <div className="group/work...">
+                            <div className="flex items...">
+                              <div>
+                              <SidebarTrigger>
+                                <Button data-sidebar="trigger" data-slot="sidebar-tr..." variant="ghost" size="icon" ...>
+                                  <button
+                                    data-slot="sidebar-trigger"
+                                    data-variant="ghost"
+                                    data-size="icon"
+                                    className={"inline-flex items-center justify-center gap-2 whitespace-nowrap round..."}
+                                    data-sidebar="trigger"
+                                    onClick={function onClick}
+-                                   data-trae-ref="e0"
+                                  >
+                          <SidebarMenu>
+                            <ul data-slot="sidebar-menu" data-sidebar="menu" className="flex w-ful...">
+                              <SidebarMenuItem>
+                                <li
+                                  data-slot="sidebar-menu-item"
+                                  data-sidebar="menu-item"
+                                  className="group/menu-item relative"
+-                                 data-trae-ref="e32"
+                                >
+                                  ...
+                                    <Slot.SlotClone data-slot="sidebar-me..." data-sidebar="menu-button" ...>
+                                      <LinkComponent className={"peer/men..."} href="/workspace..." ...>
+                                        <a
+                                          className={"peer/menu-button flex w-full items-center gap-2 overflow-hidden..."}
+                                          data-slot="sidebar-menu-button"
+                                          data-sidebar="menu-button"
+                                          data-size="default"
+                                          data-active={false}
+                                          ref={function}
+                                          onClick={function onClick}
+                                          onMouseEnter={function onMouseEnter}
+                                          onTouchStart={function onTouchStart}
+                                          href="/workspace/chats/new"
+-                                         data-trae-ref="e1"
+                                        >
+                    ...
+                      <WorkspaceNavChatList>
+                        <SidebarGroup className="pt-1">
+                          <div data-slot="sidebar-group" data-sidebar="group" className="relative f...">
+                            <SidebarMenu>
+                              <ul data-slot="sidebar-menu" data-sidebar="menu" className="flex w-ful...">
+                                <SidebarMenuItem>
+                                  <li
+                                    data-slot="sidebar-menu-item"
+                                    data-sidebar="menu-item"
+                                    className="group/menu-item relative"
+-                                   data-trae-ref="e33"
+                                  >
+                                    ...
+                                      <Slot.SlotClone data-slot="sidebar-me..." data-sidebar="menu-button" ...>
+                                        <LinkComponent className={"peer/men..."} href="/workspace..." ...>
+                                          <a
+                                            className={"peer/menu-button flex w-full items-center gap-2 overflow-hidd..."}
+                                            data-slot="sidebar-menu-button"
+                                            data-sidebar="menu-button"
+                                            data-size="default"
+                                            data-active={false}
+                                            ref={function}
+                                            onClick={function onClick}
+                                            onMouseEnter={function onMouseEnter}
+                                            onTouchStart={function onTouchStart}
+                                            href="/workspace/chats"
+-                                           data-trae-ref="e2"
+                                          >
+                                <SidebarMenuItem>
+                                  <li
+                                    data-slot="sidebar-menu-item"
+                                    data-sidebar="menu-item"
+                                    className="group/menu-item relative"
+-                                   data-trae-ref="e34"
+                                  >
+                                    ...
+                                      <Slot.SlotClone data-slot="sidebar-me..." data-sidebar="menu-button" ...>
+                                        <LinkComponent className={"peer/men..."} href="/workspace..." ...>
+                                          <a
+                                            className={"peer/menu-button flex w-full items-center gap-2 overflow-hidd..."}
+                                            data-slot="sidebar-menu-button"
+                                            data-sidebar="menu-button"
+                                            data-size="default"
+                                            data-active={false}
+                                            ref={function}
+                                            onClick={function onClick}
+                                            onMouseEnter={function onMouseEnter}
+                                            onTouchStart={function onTouchStart}
+                                            href="/workspace/agents"
+-                                           data-trae-ref="e3"
+                                          >
+                                <SidebarMenuItem>
+                                  <li
+                                    data-slot="sidebar-menu-item"
+                                    data-sidebar="menu-item"
+                                    className="group/menu-item relative"
+-                                   data-trae-ref="e35"
+                                  >
+                                    ...
+                                      <Slot.SlotClone data-slot="sidebar-me..." data-sidebar="menu-button" ...>
+                                        <LinkComponent className={"peer/men..."} href="/workspace..." ...>
+                                          <a
+                                            className={"peer/menu-button flex w-full items-center gap-2 overflow-hidd..."}
+                                            data-slot="sidebar-menu-button"
+                                            data-sidebar="menu-button"
+                                            data-size="default"
+                                            data-active={true}
+                                            ref={function}
+                                            onClick={function onClick}
+                                            onMouseEnter={function onMouseEnter}
+                                            onTouchStart={function onTouchStart}
+                                            href="/workspace/scheduled-tasks"
+-                                           data-trae-ref="e4"
+                                          >
+                                <SidebarMenuItem>
+                                  <li
+                                    data-slot="sidebar-menu-item"
+                                    data-sidebar="menu-item"
+                                    className="group/menu-item relative"
+-                                   data-trae-ref="e36"
+                                  >
+                                    ...
+                                      <Slot.SlotClone data-slot="sidebar-me..." data-sidebar="menu-button" ...>
+                                        <LinkComponent className={"peer/men..."} href="/workspace..." ...>
+                                          <a
+                                            className={"peer/menu-button flex w-full items-center gap-2 overflow-hidd..."}
+                                            data-slot="sidebar-menu-button"
+                                            data-sidebar="menu-button"
+                                            data-size="default"
+                                            data-active={false}
+                                            ref={function}
+                                            onClick={function onClick}
+                                            onMouseEnter={function onMouseEnter}
+                                            onTouchStart={function onTouchStart}
+                                            href="/workspace/workspace"
+-                                           data-trae-ref="e5"
+                                          >
+                    <SidebarFooter>
+                      <div data-slot="sidebar-fo..." data-sidebar="footer" className="flex flex-...">
+                        <WorkspaceNavMenu>
+                          <SidebarMenu className="w-full">
+                            <ul data-slot="sidebar-menu" data-sidebar="menu" className="flex min-w...">
+                              <SidebarMenuItem>
+                                <li
+                                  data-slot="sidebar-menu-item"
+                                  data-sidebar="menu-item"
+                                  className="group/menu-item relative"
+-                                 data-trae-ref="e37"
+                                >
+                                  <SidebarMenuButton size="lg" className="pointer-ev...">
+                                    <button
+                                      data-slot="sidebar-menu-button"
+                                      data-sidebar="menu-button"
+                                      data-size="lg"
+                                      data-active={false}
+                                      className={"peer/menu-button flex w-full items-center gap-2 overflow-hidden rou..."}
+-                                     data-trae-ref="e6"
+                                    >
+                    ...
+          ...
+            <SegmentViewNode type="page" pagePath="workspace/...">
+              <SegmentTrieNode>
+              <ClientPageRoot Component={function ScheduledTasksPage} serverProvidedParams={{...}}>
+                <ScheduledTasksPage params={Promise} searchParams={Promise}>
+                  <WorkspaceContainer>
+                    <div className="flex h-scr...">
+                      <WorkspaceHeader>
+                        <header className="top-0 righ...">
+                          <div className="flex min-w...">
+                            <SidebarTrigger>
+                            <Breadcrumb>
+                              <nav
+                                aria-label="breadcrumb"
+                                data-slot="breadcrumb"
+-                               data-trae-ref="e38"
+                              >
+                                <BreadcrumbList>
+                                  <ol data-slot="breadcrumb..." className="text-muted...">
+                                    <BreadcrumbItem className="hidden md:...">
+                                      <li
+                                        data-slot="breadcrumb-item"
+                                        className="items-center gap-1.5 hidden md:block"
+-                                       data-trae-ref="e39"
+                                      >
+                                        ...
+                                          <Slot.SlotClone data-slot="breadcrumb..." className="hover:text..." ref={null}>
+                                            <LinkComponent href="/workspace" data-slot="breadcrumb..." ...>
+                                              <a
+                                                data-slot="breadcrumb-link"
+                                                className="hover:text-foreground transition-colors"
+                                                ref={function}
+                                                onClick={function onClick}
+                                                onMouseEnter={function onMouseEnter}
+                                                onTouchStart={function onTouchStart}
+                                                href="/workspace"
+-                                               data-trae-ref="e7"
+                                              >
++                                               工作区
+                                    <BreadcrumbSeparator>
+                                    <BreadcrumbItem>
+                                      <li
+                                        data-slot="breadcrumb-item"
+                                        className="inline-flex items-center gap-1.5"
+-                                       data-trae-ref="e40"
+                                      >
+                                        ...
+                                          <Slot.SlotClone data-slot="breadcrumb..." className="hover:text..." ref={null}>
+                                            <LinkComponent href="/workspace..." data-slot="breadcrumb..." ...>
+                                              <a
+                                                data-slot="breadcrumb-link"
+                                                className="hover:text-foreground transition-colors"
+                                                ref={function}
+                                                onClick={function onClick}
+                                                onMouseEnter={function onMouseEnter}
+                                                onTouchStart={function onTouchStart}
+                                                href="/workspace/scheduled-tasks"
+-                                               data-trae-ref="e8"
+                                              >
++                                               Scheduled-tasks
+                          ...
+                            <Primitive.button aria-describedby={undefined} data-state="closed" data-slot="tooltip-tr..." ...>
+                              <Primitive.button.Slot aria-describedby={undefined} data-state="closed" ...>
+                                <Primitive.button.SlotClone aria-describedby={undefined} data-state="closed" ...>
+                                  <a
+                                    href="https://github.com/bytedance/tian-shu"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="opacity-75 transition hover:opacity-100"
+                                    aria-describedby={undefined}
+                                    data-state="closed"
+                                    data-slot="tooltip-trigger"
+                                    onPointerMove={function handleEvent}
+                                    onPointerLeave={function handleEvent}
+                                    onPointerDown={function handleEvent}
+                                    onFocus={function handleEvent}
+                                    onBlur={function handleEvent}
+                                    onClick={function handleEvent}
+                                    ref={function}
+-                                   data-trae-ref="e9"
+                                  >
+                      <WorkspaceBody>
+                        <main className="relative f...">
+                          <div className="flex h-ful...">
+                            <div className="mx-auto fl...">
+                              <h1
+                                className="text-2xl font-semibold"
+-                               data-trae-ref="e41"
+                              >
++                               定时任务
+                              <div className="grid gap-2..." data-testid="scheduled-...">
+                                <div>
+                                <div className="flex flex-..." data-testid="schedule-r...">
+                                  <span>
+                                  <Button variant="outline" size="sm" onClick={function onClick}>
+                                    <button
+                                      data-slot="button"
+                                      data-variant="outline"
+                                      data-size="sm"
+                                      className={"inline-flex items-center justify-center whitespace-nowrap text-sm f..."}
+                                      onClick={function onClick}
+-                                     data-trae-ref="e10"
+                                    >
+                                  <Button variant="outline" size="sm" onClick={function onClick}>
+                                    <button
+                                      data-slot="button"
+                                      data-variant="outline"
+                                      data-size="sm"
+                                      className={"inline-flex items-center justify-center whitespace-nowrap text-sm f..."}
+                                      onClick={function onClick}
+-                                     data-trae-ref="e11"
+                                    >
+                                  <Button variant="outline" size="sm" onClick={function onClick}>
+                                    <button
+                                      data-slot="button"
+                                      data-variant="outline"
+                                      data-size="sm"
+                                      className={"inline-flex items-center justify-center whitespace-nowrap text-sm f..."}
+                                      onClick={function onClick}
+-                                     data-trae-ref="e12"
+                                    >
+                                  <Button variant="outline" size="sm" onClick={function onClick}>
+                                    <button
+                                      data-slot="button"
+                                      data-variant="outline"
+                                      data-size="sm"
+                                      className={"inline-flex items-center justify-center whitespace-nowrap text-sm f..."}
+                                      onClick={function onClick}
+-                                     data-trae-ref="e13"
+                                    >
+                                <div className="flex gap-2">
+                                  <Button variant="default" size="sm" onClick={function onClick}>
+                                    <button
+                                      data-slot="button"
+                                      data-variant="default"
+                                      data-size="sm"
+                                      className={"inline-flex items-center justify-center whitespace-nowrap text-sm f..."}
+                                      onClick={function onClick}
+-                                     data-trae-ref="e14"
+                                    >
++                                     新线程
+                                  <Button variant="outline" size="sm" onClick={function onClick}>
+                                    <button
+                                      data-slot="button"
+                                      data-variant="outline"
+                                      data-size="sm"
+                                      className={"inline-flex items-center justify-center whitespace-nowrap text-sm f..."}
+                                      onClick={function onClick}
+-                                     data-trae-ref="e15"
+                                    >
++                                     复用线程
+                                <Input value="" onChange={function onChange} placeholder="任务标题">
+                                  <input
+                                    type={undefined}
+                                    data-slot="input"
+                                    className="file:text-foreground placeholder:text-muted-foreground selection:bg-pri..."
+                                    value=""
+                                    onChange={function onChange}
+                                    placeholder="任务标题"
+-                                   data-trae-ref="e16"
+                                  >
+                                <Textarea rows={4} value="" onChange={function onChange} placeholder="提示词">
+                                  <textarea
+                                    data-slot="textarea"
+                                    className="border-input placeholder:text-muted-foreground/60 focus-visible:border-..."
+                                    rows={4}
+                                    value=""
+                                    onChange={function onChange}
+                                    placeholder="提示词"
+-                                   data-trae-ref="e17"
+                                  >
+                                <ScheduledTaskScheduleInput initial={{...}} onChange={function bound dispatchSetState}>
+                                  <div className="flex flex-..." data-testid="schedule-i...">
+                                    <div className="flex flex-...">
+                                      <Button variant="default" size="sm" onClick={function onClick}>
+                                        <button
+                                          data-slot="button"
+                                          data-variant="default"
+                                          data-size="sm"
+                                          className={"inline-flex items-center justify-center whitespace-nowrap text-..."}
+                                          onClick={function onClick}
+-                                         data-trae-ref="e18"
+                                        >
++                                         重复
+                                      <Button variant="outline" size="sm" onClick={function onClick}>
+                                        <button
+                                          data-slot="button"
+                                          data-variant="outline"
+                                          data-size="sm"
+                                          className={"inline-flex items-center justify-center whitespace-nowrap text-..."}
+                                          onClick={function onClick}
+-                                         data-trae-ref="e19"
+                                        >
++                                         单次
+                                    ...
+                                      <Primitive.div.Slot ref={function}>
+                                        <Primitive.div.SlotClone ref={function}>
+                                          <Primitive.button type="button" role="combobox" aria-controls="radix-_R_1..." ...>
+                                            <button
+                                              type="button"
+                                              role="combobox"
+                                              aria-controls="radix-_R_19qklritq6itqlb_"
+                                              aria-expanded={false}
+                                              aria-required={undefined}
+                                              aria-autocomplete="none"
+                                              dir="ltr"
+                                              data-state="closed"
+                                              disabled={false}
+                                              data-disabled={undefined}
+                                              data-placeholder={undefined}
+                                              data-slot="select-trigger"
+                                              data-size="default"
+                                              className={"border-input data-[placeholder]:text-muted-foreground [&_sv..."}
+                                              data-testid="schedule-preset"
+                                              onClick={function handleEvent}
+                                              onPointerDown={function handleEvent}
+                                              onKeyDown={function handleEvent}
+                                              ref={function}
+-                                             data-trae-ref="e20"
+                                            >
+                                    <Input type="time" value="09:00" onChange={function onChange} aria-label="时间">
+                                      <input
+                                        type="time"
+                                        data-slot="input"
+                                        className="file:text-foreground placeholder:text-muted-foreground selection:bg..."
+                                        value="09:00"
+                                        onChange={function onChange}
+                                        aria-label="时间"
+-                                       data-trae-ref="e21"
+                                      >
+                                    ...
+                                      <Primitive.div.Slot ref={function}>
+                                        <Primitive.div.SlotClone ref={function}>
+                                          <Primitive.button type="button" role="combobox" aria-controls="radix-_R_d..." ...>
+                                            <button
+                                              type="button"
+                                              role="combobox"
+                                              aria-controls="radix-_R_dqklritq6itqlb_"
+                                              aria-expanded={false}
+                                              aria-required={undefined}
+                                              aria-autocomplete="none"
+                                              dir="ltr"
+                                              data-state="closed"
+                                              disabled={false}
+                                              data-disabled={undefined}
+                                              data-placeholder={undefined}
+                                              data-slot="select-trigger"
+                                              data-size="default"
+                                              className={"border-input data-[placeholder]:text-muted-foreground [&_sv..."}
+                                              data-testid="schedule-timezone"
+                                              onClick={function handleEvent}
+                                              onPointerDown={function handleEvent}
+                                              onKeyDown={function handleEvent}
+                                              ref={function}
+-                                             data-trae-ref="e22"
+                                            >
+                                    ...
+                                <Button onClick={function onClick} disabled={true}>
+                                  <button
+                                    data-slot="button"
+                                    data-variant="default"
+                                    data-size="default"
+                                    className={"inline-flex items-center justify-center gap-2 whitespace-nowrap round..."}
+                                    onClick={function onClick}
+                                    disabled={true}
+-                                   data-trae-ref="e23"
+                                  >
++                                   创建
+                              <div className="flex flex-...">
+                                <Button variant="default" size="sm" onClick={function onClick}>
+                                  <button
+                                    data-slot="button"
+                                    data-variant="default"
+                                    data-size="sm"
+                                    className={"inline-flex items-center justify-center whitespace-nowrap text-sm fon..."}
+                                    onClick={function onClick}
+-                                   data-trae-ref="e24"
+                                  >
++                                   全部状态
+                                <Button variant="outline" size="sm" onClick={function onClick}>
+                                  <button
+                                    data-slot="button"
+                                    data-variant="outline"
+                                    data-size="sm"
+                                    className={"inline-flex items-center justify-center whitespace-nowrap text-sm fon..."}
+                                    onClick={function onClick}
+-                                   data-trae-ref="e25"
+                                  >
++                                   已启用
+                                <Button variant="outline" size="sm" onClick={function onClick}>
+                                  <button
+                                    data-slot="button"
+                                    data-variant="outline"
+                                    data-size="sm"
+                                    className={"inline-flex items-center justify-center whitespace-nowrap text-sm fon..."}
+                                    onClick={function onClick}
+-                                   data-trae-ref="e26"
+                                  >
++                                   已暂停
+                                <Button variant="outline" size="sm" onClick={function onClick}>
+                                  <button
+                                    data-slot="button"
+                                    data-variant="outline"
+                                    data-size="sm"
+                                    className={"inline-flex items-center justify-center whitespace-nowrap text-sm fon..."}
+                                    onClick={function onClick}
+-                                   data-trae-ref="e27"
+                                  >
++                                   已完成
+                                <Button variant="outline" size="sm" onClick={function onClick}>
+                                  <button
+                                    data-slot="button"
+                                    data-variant="outline"
+                                    data-size="sm"
+                                    className={"inline-flex items-center justify-center whitespace-nowrap text-sm fon..."}
+                                    onClick={function onClick}
+-                                   data-trae-ref="e28"
+                                  >
++                                   已失败
+                                <Button variant="default" size="sm" onClick={function onClick}>
+                                  <button
+                                    data-slot="button"
+                                    data-variant="default"
+                                    data-size="sm"
+                                    className={"inline-flex items-center justify-center whitespace-nowrap text-sm fon..."}
+                                    onClick={function onClick}
+-                                   data-trae-ref="e29"
+                                  >
++                                   全部类型
+                                <Button variant="outline" size="sm" onClick={function onClick}>
+                                  <button
+                                    data-slot="button"
+                                    data-variant="outline"
+                                    data-size="sm"
+                                    className={"inline-flex items-center justify-center whitespace-nowrap text-sm fon..."}
+                                    onClick={function onClick}
+-                                   data-trae-ref="e30"
+                                  >
++                                   定时
+                                <Button variant="outline" size="sm" onClick={function onClick}>
+                                  <button
+                                    data-slot="button"
+                                    data-variant="outline"
+                                    data-size="sm"
+                                    className={"inline-flex items-center justify-center whitespace-nowrap text-sm fon..."}
+                                    onClick={function onClick}
+-                                   data-trae-ref="e31"
+                                  >
++                                   单次
+                              ...
+                      ...
+            ...
+ 
+ GET /workspace/scheduled-tasks 200 in 109ms (next.js: 8ms, application-code: 101ms)
+ GET /@vite/client 404 in 37ms (next.js: 4ms, application-code: 33ms)
+ GET /workspace/agents 200 in 90ms (next.js: 68ms, application-code: 21ms)
+ GET /workspace/chats 200 in 248ms (next.js: 205ms, application-code: 43ms)
+ GET /workspace/chats/new 200 in 65ms (next.js: 45ms, application-code: 20ms)
+ GET /workspace/workflows 200 in 60ms (next.js: 43ms, application-code: 17ms)
+ GET /workspace/chats/new 200 in 52ms (next.js: 34ms, application-code: 17ms)
+ GET /workspace/chats/4e376ebf-730d-4545-ae64-648b3732909d 200 in 51ms (next.js: 31ms, application-code: 19ms)
+ GET /workspace/chats/772662ce-1105-4f88-8f01-7417c06bab13 200 in 73ms (next.js: 44ms, application-code: 29ms)
+ GET /workspace/chats/new 200 in 65ms (next.js: 38ms, application-code: 27ms)
+✓ Compiled in 5.8s
+✓ Compiled in 607ms
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ Error: Module [project]/src/app/workspace/chats/[thread_id]/providers.tsx [app-ssr] (ecmascript) was instantiated because it was required from module [project]/node_modules/.pnpm/next@16.2.11_@opentelemetry_1ff9176e8da6511df0f67ea8f796d305/node_modules/next/dist/esm/build/templates/app-page.js?page=/workspace/chats/[thread_id]/page { MODULE_0 => "[project]/src/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_1 => "[project]/node_modules/.pnpm/next@16.2.11_@opentelemetry_1ff9176e8da6511df0f67ea8f796d305/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/.pnpm/next@16.2.11_@opentelemetry_1ff9176e8da6511df0f67ea8f796d305/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/.pnpm/next@16.2.11_@opentelemetry_1ff9176e8da6511df0f67ea8f796d305/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/.pnpm/next@16.2.11_@opentelemetry_1ff9176e8da6511df0f67ea8f796d305/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/src/app/workspace/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/src/app/workspace/chats/[thread_id]/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_7 => "[project]/src/app/workspace/chats/[thread_id]/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>, but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at ignore-listed frames {
+  digest: '962000913'
+}
+ GET /workspace/chats/new 200 in 845ms (next.js: 209ms, application-code: 636ms)
+ GET /workspace/chats/new 200 in 92ms (next.js: 18ms, application-code: 74ms)
+ GET /workspace/chats/new 200 in 3.0s (next.js: 870ms, application-code: 2.1s)
+ GET /workspace/chats/new 500 in 3.0s (next.js: 1011ms, application-code: 2.0s)
+✓ Compiled in 2.3s
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/en-US.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /workspace/chats/new 200 in 1554ms (next.js: 925ms, application-code: 629ms)
+ GET /workspace/chats/new 200 in 445ms (next.js: 12ms, application-code: 433ms)
+ GET /@vite/client 404 in 65ms (next.js: 27ms, application-code: 38ms)
+✓ Compiled in 951ms
+ GET /workspace/chats/new 200 in 670ms (next.js: 412ms, application-code: 258ms)
+ GET /workspace/chats/new 200 in 337ms (next.js: 99ms, application-code: 238ms)
+ GET /workspace/chats/new 200 in 248ms (next.js: 5ms, application-code: 242ms)
+ GET /workspace/chats/new 200 in 217ms (next.js: 28ms, application-code: 190ms)
+ GET /workspace/chats/new 200 in 219ms (next.js: 6ms, application-code: 213ms)
+ GET /workspace/chats/new 200 in 234ms (next.js: 87ms, application-code: 147ms)
+ GET /workspace/chats/new 200 in 271ms (next.js: 55ms, application-code: 216ms)
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/zh-CN.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /workspace/chats/new 200 in 611ms (next.js: 10ms, application-code: 602ms)
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/zh-CN.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /workspace/chats/new 200 in 955ms (next.js: 5ms, application-code: 950ms)
+ GET /workspace/chats/new 200 in 1019ms (next.js: 24ms, application-code: 994ms)
+ GET /workspace/chats/new 200 in 128ms (next.js: 45ms, application-code: 83ms)
+ GET /workspace/chats/new 200 in 660ms (next.js: 53ms, application-code: 608ms)
+ GET /workspace/chats/new 200 in 181ms (next.js: 6ms, application-code: 175ms)
+ GET /@vite/client 404 in 42ms (next.js: 14ms, application-code: 28ms)
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/en-US.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/en-US.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /workspace/chats/new 200 in 485ms (next.js: 406ms, application-code: 79ms)
+ GET /workspace/chats/new 200 in 486ms (next.js: 380ms, application-code: 106ms)
+ GET /workspace/chats/new 200 in 489ms (next.js: 439ms, application-code: 50ms)
+ GET /workspace/chats/new 200 in 927ms (next.js: 5ms, application-code: 922ms)
+ GET /workspace/chats/new 200 in 1183ms (next.js: 183ms, application-code: 1000ms)
+ GET /workspace/chats/new 200 in 937ms (next.js: 34ms, application-code: 903ms)
+ GET /@vite/client 404 in 49ms (next.js: 14ms, application-code: 34ms)
+ GET /workspace/chats/new 200 in 407ms (next.js: 274ms, application-code: 133ms)
+✓ Compiled in 5.3s
+ GET /workspace/chats/new 200 in 940ms (next.js: 683ms, application-code: 256ms)
+ GET /workspace/chats/new 200 in 91ms (next.js: 6ms, application-code: 85ms)
+ GET /workspace/chats/new 200 in 37ms (next.js: 6ms, application-code: 31ms)
+ GET /workspace/chats/new 200 in 1188ms (next.js: 79ms, application-code: 1109ms)
+ GET /@vite/client 404 in 56ms (next.js: 18ms, application-code: 38ms)
+ GET /workspace/chats/5cc77602-c414-40ad-ba54-0f8a4ec41064 200 in 577ms (next.js: 106ms, application-code: 471ms)
+ GET /workspace/chats/7f154d1b-ee82-4eb6-a2bf-950267322e4c 200 in 762ms (next.js: 463ms, application-code: 299ms)
+ GET /workspace/agents 200 in 1172ms (next.js: 933ms, application-code: 239ms)
+ GET /workspace/workspace 200 in 221ms (next.js: 168ms, application-code: 52ms)
+✓ Compiled in 1811ms
+ GET /workspace/agents 200 in 1035ms (next.js: 403ms, application-code: 632ms)
+ GET /workspace/workspace 200 in 1039ms (next.js: 173ms, application-code: 866ms)
+ GET /workspace/agents 200 in 366ms (next.js: 169ms, application-code: 196ms)
+ GET /workspace/workspace 200 in 372ms (next.js: 97ms, application-code: 274ms)
+ GET /workspace/agents 200 in 147ms (next.js: 93ms, application-code: 54ms)
+ GET /workspace/agents 200 in 148ms (next.js: 69ms, application-code: 79ms)
+ GET /workspace/workspace 200 in 151ms (next.js: 12ms, application-code: 139ms)
+ GET /workspace/workspace 200 in 152ms (next.js: 35ms, application-code: 118ms)
+✓ Compiled in 1635ms
+ GET /workspace/agents 200 in 715ms (next.js: 146ms, application-code: 569ms)
+ GET /workspace/workspace 200 in 719ms (next.js: 347ms, application-code: 372ms)
+ GET /workspace/agents 200 in 353ms (next.js: 30ms, application-code: 323ms)
+ GET /workspace/workspace 200 in 373ms (next.js: 5ms, application-code: 368ms)
+ GET /workspace/agents 200 in 309ms (next.js: 148ms, application-code: 161ms)
+ GET /workspace/agents 200 in 311ms (next.js: 97ms, application-code: 214ms)
+ GET /workspace/agents 200 in 311ms (next.js: 124ms, application-code: 187ms)
+ GET /workspace/workspace 200 in 317ms (next.js: 10ms, application-code: 307ms)
+ GET /workspace/agents 200 in 312ms (next.js: 168ms, application-code: 143ms)
+ GET /workspace/workspace 200 in 316ms (next.js: 73ms, application-code: 244ms)
+ GET /workspace/workspace 200 in 317ms (next.js: 54ms, application-code: 263ms)
+ GET /workspace/workspace 200 in 318ms (next.js: 28ms, application-code: 290ms)
+ GET /workspace/agents 200 in 71ms (next.js: 6ms, application-code: 66ms)
+ GET /workspace/workspace 200 in 40ms (next.js: 8ms, application-code: 32ms)
+ GET /workspace/workspace 200 in 851ms (next.js: 7ms, application-code: 844ms)
+ GET /@vite/client 404 in 50ms (next.js: 16ms, application-code: 34ms)
+ GET /workspace/workspace 200 in 79ms (next.js: 27ms, application-code: 52ms)
+ GET /workspace/workspace 200 in 126ms (next.js: 40ms, application-code: 86ms)
+ GET /workspace 307 in 2.2s (next.js: 836ms, application-code: 1376ms)
+ GET /workspace/chats/new 200 in 4.6s (next.js: 829ms, application-code: 3.8s)
+ GET /@vite/client 404 in 645ms (next.js: 16ms, application-code: 629ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <div data-slot="sidebar-wr..." style={{...}} className="group/side...">
+      <WorkspaceSidebar>
+        <Sidebar variant="sidebar" collapsible="icon">
+          <div className="group peer..." data-state="expanded" data-collapsible="" data-variant="sidebar" ...>
+            <div>
+            <div data-slot="sidebar-co..." className="fixed inse...">
+              <div data-sidebar="sidebar" data-slot="sidebar-inner" className="bg-sidebar...">
+                <SidebarHeader>
+                <SidebarContent>
+                <SidebarFooter>
+                  <div data-slot="sidebar-fo..." data-sidebar="footer" className="flex flex-...">
+                    <WorkspaceNavMenu>
+                      <SidebarMenu className="w-full">
+                        <ul data-slot="sidebar-menu" data-sidebar="menu" className="flex min-w...">
+                          <SidebarMenuItem>
+                            <li data-slot="sidebar-me..." data-sidebar="menu-item" className="group/menu...">
+                              <SidebarMenuButton size="lg" className="pointer-ev...">
+                                <button
+                                  data-slot="sidebar-menu-button"
+                                  data-sidebar="menu-button"
+                                  data-size="lg"
+                                  data-active={false}
+                                  className={"peer/menu-button flex w-full items-center gap-2 overflow-hidden rounded..."}
+-                                 data-trae-ref="e6"
+                                >
+                ...
+      ...
+ 
+ GET /workspace/workspace 200 in 724ms (next.js: 72ms, application-code: 653ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/workspace..." tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} ...>
+            <SegmentViewNode type="page" pagePath="workspace/...">
+              <SegmentTrieNode>
+              <ClientPageRoot Component={function WorkspacePage} serverProvidedParams={{...}}>
+                <WorkspacePage params={Promise} searchParams={Promise}>
+                  <WorkspaceContainer>
+                    <div className="flex h-scr...">
+                      <WorkspaceHeader>
+                        <header className="top-0 righ...">
+                          <div className="flex min-w...">
+                            <SidebarTrigger>
+                            <Breadcrumb>
+                              <nav
+                                aria-label="breadcrumb"
+                                data-slot="breadcrumb"
+-                               data-trae-ref="e16"
+                              >
+                                <BreadcrumbList>
+                                  <ol data-slot="breadcrumb..." className="text-muted...">
+                                    <BreadcrumbItem className="hidden md:...">
+                                      <li
+                                        data-slot="breadcrumb-item"
+                                        className="items-center gap-1.5 hidden md:block"
+-                                       data-trae-ref="e17"
+                                      >
+                                        ...
+                                          <Slot.SlotClone data-slot="breadcrumb..." className="hover:text..." ref={null}>
+                                            <LinkComponent href="/workspace" data-slot="breadcrumb..." ...>
+                                              <a
+                                                data-slot="breadcrumb-link"
+                                                className="hover:text-foreground transition-colors"
+                                                ref={function}
+                                                onClick={function onClick}
+                                                onMouseEnter={function onMouseEnter}
+                                                onTouchStart={function onTouchStart}
+                                                href="/workspace"
+-                                               data-trae-ref="e7"
+                                              >
++                                               工作区
+                                    <BreadcrumbSeparator>
+                                    <BreadcrumbItem>
+                                      <li
+                                        data-slot="breadcrumb-item"
+                                        className="inline-flex items-center gap-1.5"
+-                                       data-trae-ref="e18"
+                                      >
+                                        ...
+                                          <Slot.SlotClone data-slot="breadcrumb..." className="hover:text..." ref={null}>
+                                            <LinkComponent href="/workspace..." data-slot="breadcrumb..." ...>
+                                              <a
+                                                data-slot="breadcrumb-link"
+                                                className="hover:text-foreground transition-colors"
+                                                ref={function}
+                                                onClick={function onClick}
+                                                onMouseEnter={function onMouseEnter}
+                                                onTouchStart={function onTouchStart}
+                                                href="/workspace/workspace"
+-                                               data-trae-ref="e8"
+                                              >
++                                               工作区
+                          ...
+                            <Primitive.button aria-describedby={undefined} data-state="closed" data-slot="tooltip-tr..." ...>
+                              <Primitive.button.Slot aria-describedby={undefined} data-state="closed" ...>
+                                <Primitive.button.SlotClone aria-describedby={undefined} data-state="closed" ...>
+                                  <a
+                                    href="https://github.com/bytedance/tian-shu"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="opacity-75 transition hover:opacity-100"
+                                    aria-describedby={undefined}
+                                    data-state="closed"
+                                    data-slot="tooltip-trigger"
+                                    onPointerMove={function handleEvent}
+                                    onPointerLeave={function handleEvent}
+                                    onPointerDown={function handleEvent}
+                                    onFocus={function handleEvent}
+                                    onBlur={function handleEvent}
+                                    onClick={function handleEvent}
+                                    ref={function}
+-                                   data-trae-ref="e9"
+                                  >
+                      ...
+            ...
+          ...
+ 
+ GET /@vite/client 404 in 1022ms (next.js: 743ms, application-code: 279ms)
+✓ Compiled in 941ms
+ GET /workspace/agents 200 in 634ms (next.js: 383ms, application-code: 251ms)
+ GET /workspace/workspace 200 in 636ms (next.js: 167ms, application-code: 470ms)
+ GET /workspace/agents 200 in 176ms (next.js: 26ms, application-code: 150ms)
+ GET /workspace/workspace 200 in 179ms (next.js: 7ms, application-code: 172ms)
+ GET /workspace/agents 200 in 116ms (next.js: 50ms, application-code: 66ms)
+ GET /workspace/agents 200 in 116ms (next.js: 68ms, application-code: 48ms)
+ GET /workspace/workspace 200 in 120ms (next.js: 8ms, application-code: 112ms)
+ GET /workspace/workspace 200 in 121ms (next.js: 26ms, application-code: 94ms)
+ GET /workspace/workspace 200 in 1691ms (next.js: 597ms, application-code: 1094ms)
+ GET /workspace/agents 200 in 1091ms (next.js: 539ms, application-code: 551ms)
+ GET /workspace/agents 200 in 428ms (next.js: 166ms, application-code: 262ms)
+ GET /workspace/workspace 200 in 428ms (next.js: 362ms, application-code: 65ms)
+ GET /workspace/workspace 200 in 860ms (next.js: 26ms, application-code: 834ms)
+ GET /@vite/client 404 in 57ms (next.js: 18ms, application-code: 39ms)
+ GET /workspace/chats/new 200 in 247ms (next.js: 199ms, application-code: 48ms)
+ GET / 200 in 614ms (next.js: 169ms, application-code: 445ms)
+ GET /@vite/client 404 in 50ms (next.js: 6ms, application-code: 44ms)
+ GET /workspace/chats/new 200 in 941ms (next.js: 57ms, application-code: 883ms)
+ GET /@vite/client 404 in 40ms (next.js: 5ms, application-code: 34ms)
+[browser] Uncaught SyntaxError: Unexpected identifier 'as'
+SyntaxError: Unexpected identifier 'as'
+[browser] [tian-shu] Dropped unsupported LangGraph run option: streamResumable (src/core/api/stream-mode.ts:48:15)
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 268ms (next.js: 84ms, application-code: 184ms)
+ GET /@vite/client 404 in 39ms (next.js: 6ms, application-code: 33ms)
+[browser] [tian-shu] Dropped unsupported LangGraph run option: streamResumable (src/core/api/stream-mode.ts:48:15)
+✓ Compiled in 1344ms
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 348ms (next.js: 241ms, application-code: 107ms)
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 41ms (next.js: 7ms, application-code: 34ms)
+✓ Compiled in 559ms
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 284ms (next.js: 182ms, application-code: 102ms)
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 37ms (next.js: 5ms, application-code: 32ms)
+✓ Compiled in 686ms
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 257ms (next.js: 195ms, application-code: 62ms)
+✓ Compiled in 882ms
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 515ms (next.js: 187ms, application-code: 328ms)
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 272ms (next.js: 6ms, application-code: 266ms)
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 241ms (next.js: 41ms, application-code: 200ms)
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 243ms (next.js: 11ms, application-code: 232ms)
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 241ms (next.js: 80ms, application-code: 161ms)
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 241ms (next.js: 117ms, application-code: 124ms)
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 44ms (next.js: 8ms, application-code: 36ms)
+✓ Compiled in 610ms
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 286ms (next.js: 217ms, application-code: 69ms)
+✓ Compiled in 638ms
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 255ms (next.js: 180ms, application-code: 75ms)
+✓ Compiled in 510ms
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 255ms (next.js: 187ms, application-code: 68ms)
+✓ Compiled in 498ms
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 250ms (next.js: 184ms, application-code: 65ms)
+✓ Compiled in 511ms
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 275ms (next.js: 176ms, application-code: 99ms)
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 35ms (next.js: 5ms, application-code: 31ms)
+✓ Compiled in 567ms
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 305ms (next.js: 217ms, application-code: 88ms)
+✓ Compiled in 508ms
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 270ms (next.js: 188ms, application-code: 82ms)
+✓ Compiled in 519ms
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 249ms (next.js: 173ms, application-code: 76ms)
+✓ Compiled in 873ms
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/zh-CN.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 1316ms (next.js: 767ms, application-code: 549ms)
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 138ms (next.js: 116ms, application-code: 22ms)
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 1955ms (next.js: 355ms, application-code: 1601ms)
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 139ms (next.js: 76ms, application-code: 63ms)
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 140ms (next.js: 49ms, application-code: 91ms)
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 1415ms (next.js: 131ms, application-code: 1284ms)
+ GET /@vite/client 404 in 54ms (next.js: 14ms, application-code: 41ms)
+✓ Compiled in 880ms
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/en-US.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/en-US.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 1721ms (next.js: 428ms, application-code: 1293ms)
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 146ms (next.js: 78ms, application-code: 68ms)
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 146ms (next.js: 111ms, application-code: 35ms)
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 148ms (next.js: 35ms, application-code: 113ms)
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 1053ms (next.js: 87ms, application-code: 966ms)
+ GET /workspace/chats/b819db20-d203-40c2-8b89-f4a0edf77faa 200 in 1074ms (next.js: 146ms, application-code: 928ms)
+ GET /@vite/client 404 in 78ms (next.js: 15ms, application-code: 64ms)
+[browser] Uncaught SyntaxError: Unexpected token '<'
+SyntaxError: Unexpected token '<'
+ GET /workspace/chats/new 200 in 104ms (next.js: 65ms, application-code: 39ms)
+[browser] Uncaught SyntaxError: Unexpected token '<'
+SyntaxError: Unexpected token '<'
+[browser] Uncaught SyntaxError: Unexpected token '<'
+SyntaxError: Unexpected token '<'
+[browser] [tian-shu] Dropped unsupported LangGraph run option: streamResumable (src/core/api/stream-mode.ts:48:15)
+ GET /workspace/workspace 200 in 252ms (next.js: 200ms, application-code: 52ms)
+ GET /workspace/chats/e8ee9e7b-3078-4c66-9610-d37363e23f75 200 in 167ms (next.js: 59ms, application-code: 109ms)
+ GET /@vite/client 404 in 61ms (next.js: 8ms, application-code: 53ms)
+ GET /workspace/chats/new 307 in 150ms (next.js: 53ms, application-code: 97ms)
+ GET /login 200 in 315ms (next.js: 119ms, application-code: 196ms)
+ GET /@vite/client 404 in 48ms (next.js: 5ms, application-code: 43ms)
+ GET /workspace 200 in 239ms (next.js: 167ms, application-code: 72ms)
+ GET /workspace/chats/new 200 in 95ms (next.js: 43ms, application-code: 52ms)
+ GET /workspace/chats/new 200 in 23ms (next.js: 5ms, application-code: 18ms)
+ GET /workspace/workspace 200 in 36ms (next.js: 11ms, application-code: 26ms)
+ GET /workspace/chats/new 200 in 71ms (next.js: 48ms, application-code: 23ms)
+ GET /workspace/chats/e8ee9e7b-3078-4c66-9610-d37363e23f75 200 in 54ms (next.js: 32ms, application-code: 22ms)
+ GET /workspace/workflows 200 in 220ms (next.js: 170ms, application-code: 49ms)
+ GET /workspace/workspace 200 in 32ms (next.js: 8ms, application-code: 25ms)
+ GET / 200 in 592ms (next.js: 163ms, application-code: 428ms)
+ GET /@vite/client 404 in 35ms (next.js: 4ms, application-code: 30ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <ScrollAndMaybeFocusHandler cacheNode={{rsc:{...}, ...}}>
+      <InnerScrollAndFocusHandlerOld focusAndScrollRef={{scrollRef:null, ...}} cacheNode={{rsc:{...}, ...}}>
+        <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+          <LoadingBoundary name="/" loading={null}>
+            <HTTPAccessFallbackBoundary notFound={{...}} forbidden={undefined} unauthorized={undefined}>
+              <HTTPAccessFallbackErrorBoundary pathname="/" notFound={{...}} forbidden={undefined} ...>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+                      <SegmentViewNode type="page" pagePath="page.tsx">
+                        <SegmentTrieNode>
+                        <LandingPage>
+                          <div className="min-h-scre...">
+                            <header>
+                            <main className="flex w-ful...">
+                              <Hero>
+                                <div className="relative f...">
+                                  <div>
+                                  <FlickeringGrid>
+                                  <div className="container-...">
+                                    <h1
+                                      className="text-center text-5xl leading-tight font-bold break-words md:text-6xl"
+-                                     data-trae-ref="e15"
+                                    >
++                                     TianShu
+                                    <div>
+                                    <p
+                                      className="text-muted-foreground mt-8 max-w-4xl text-center text-base leading-7 ..."
+-                                     data-trae-ref="e16"
+                                    >
++                                     An open-source SuperAgent harness that researches, codes, and creates. With the h...
+                                    <LinkComponent href="/workspace">
+                                      <a
+                                        ref={function}
+                                        onClick={function onClick}
+                                        onMouseEnter={function onMouseEnter}
+                                        onTouchStart={function onTouchStart}
+                                        href="/workspace"
+-                                       data-trae-ref="e4"
+                                      >
+                                        <Button className="mt-8 h-11 ..." size="lg">
+                                          <button
+                                            data-slot="button"
+                                            data-variant="default"
+                                            data-size="lg"
+                                            className={"inline-flex items-center justify-center gap-2 whitespace-nowr..."}
+-                                           data-trae-ref="e5"
+                                          >
+                              ...
+                                <div className="container-...">
+                                  <LinkComponent>
+                                    <LinkComponent href="/workspace..." target="_blank" rel="noopener n...">
+                                      <a
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        ref={function}
+                                        onClick={function onClick}
+                                        onMouseEnter={function onMouseEnter}
+                                        onTouchStart={function onTouchStart}
+                                        href="/workspace/chats/7cfa5f8f-a2f8-47ad-acbd-da7137baf990?mock=true"
+-                                       data-trae-ref="e6"
+                                      >
+                                        <Card>
+                                          <div data-slot="card" className="bg-card te...">
+                                            <img
+                                              alt="Forecast 2026 Agent Trends and Opportunities preview"
+                                              fetchPriority={undefined}
+                                              loading="lazy"
+                                              width={640}
+                                              height={360}
+                                              decoding="async"
+                                              data-nimg="1"
+                                              className="absolute inset-0 z-0 h-full w-full object-cover transition-al..."
+                                              style={{color:"transparent"}}
+                                              sizes="(min-width: 1024px) 320px, (min-width: 768px) 50vw, 100vw"
+                                              srcSet={"/_next/image?url=%2Fimages%2F7cfa5f8f-a2f8-47ad-acbd-da7137baf..."}
+                                              src={"/_next/image?url=%2Fimages%2F7cfa5f8f-a2f8-47ad-acbd-da7137baf990..."}
+                                              ref={function}
+                                              onLoad={function onLoad}
+                                              onError={function onError}
+-                                             data-trae-ref="e17"
+                                            >
+                                            <div className="relative z...">
+                                              <div className="flex w-ful..." style={{...}}>
+                                                <div className="flex flex-...">
+                                                  <h3
+                                                    className="flex h-14 items-center text-xl font-bold text-shadow-black"
+-                                                   data-trae-ref="e18"
+                                                  >
++                                                   Forecast 2026 Agent Trends and Opportunities
+                                                  <p
+                                                    className="box-shadow-black overflow-hidden text-sm text-white/85 ..."
+-                                                   data-trae-ref="e19"
+                                                  >
++                                                   Create a webpage with a Deep Research report forecasting the agent ...
+                                  <LinkComponent>
+                                    <LinkComponent href="/workspace..." target="_blank" rel="noopener n...">
+                                      <a
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        ref={function}
+                                        onClick={function onClick}
+                                        onMouseEnter={function onMouseEnter}
+                                        onTouchStart={function onTouchStart}
+                                        href="/workspace/chats/4f3e55ee-f853-43db-bfb3-7d1a411f03cb?mock=true"
+-                                       data-trae-ref="e7"
+                                      >
+                                        <Card>
+                                          <div data-slot="card" className="bg-card te...">
+                                            <img
+                                              alt={"Generate a Video Based On the Novel \"Pride and Prejudice\" preview"}
+                                              fetchPriority={undefined}
+                                              loading="lazy"
+                                              width={640}
+                                              height={360}
+                                              decoding="async"
+                                              data-nimg="1"
+                                              className="absolute inset-0 z-0 h-full w-full object-cover transition-al..."
+                                              style={{color:"transparent"}}
+                                              sizes="(min-width: 1024px) 320px, (min-width: 768px) 50vw, 100vw"
+                                              srcSet={"/_next/image?url=%2Fimages%2F4f3e55ee-f853-43db-bfb3-7d1a411f0..."}
+                                              src={"/_next/image?url=%2Fimages%2F4f3e55ee-f853-43db-bfb3-7d1a411f03cb..."}
+                                              ref={function}
+                                              onLoad={function onLoad}
+                                              onError={function onError}
+-                                             data-trae-ref="e20"
+                                            >
+                                            <div className="relative z...">
+                                              <div className="flex w-ful..." style={{...}}>
+                                                <div className="flex flex-...">
+                                                  <h3
+                                                    className="flex h-14 items-center text-xl font-bold text-shadow-black"
+-                                                   data-trae-ref="e21"
+                                                  >
++                                                   {"Generate a Video Based On the Novel \"Pride and Prejudice\""}
+                                                  <p
+                                                    className="box-shadow-black overflow-hidden text-sm text-white/85 ..."
+-                                                   data-trae-ref="e22"
+                                                  >
++                                                   {"Search the specific scene from the novel \"Pride and Prejudice..."}
+                                  <LinkComponent>
+                                    <LinkComponent href="/workspace..." target="_blank" rel="noopener n...">
+                                      <a
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        ref={function}
+                                        onClick={function onClick}
+                                        onMouseEnter={function onMouseEnter}
+                                        onTouchStart={function onTouchStart}
+                                        href="/workspace/chats/21cfea46-34bd-4aa6-9e1f-3009452fbeb9?mock=true"
+-                                       data-trae-ref="e8"
+                                      >
+                                        <Card>
+                                          <div data-slot="card" className="bg-card te...">
+                                            <img
+                                              alt="Doraemon Explains the MOE Architecture preview"
+                                              fetchPriority={undefined}
+                                              loading="lazy"
+                                              width={640}
+                                              height={360}
+                                              decoding="async"
+                                              data-nimg="1"
+                                              className="absolute inset-0 z-0 h-full w-full object-cover transition-al..."
+                                              style={{color:"transparent"}}
+                                              sizes="(min-width: 1024px) 320px, (min-width: 768px) 50vw, 100vw"
+                                              srcSet={"/_next/image?url=%2Fimages%2F21cfea46-34bd-4aa6-9e1f-3009452fb..."}
+                                              src={"/_next/image?url=%2Fimages%2F21cfea46-34bd-4aa6-9e1f-3009452fbeb9..."}
+                                              ref={function}
+                                              onLoad={function onLoad}
+                                              onError={function onError}
+-                                             data-trae-ref="e23"
+                                            >
+                                            <div className="relative z...">
+                                              <div className="flex w-ful..." style={{...}}>
+                                                <div className="flex flex-...">
+                                                  <h3
+                                                    className="flex h-14 items-center text-xl font-bold text-shadow-black"
+-                                                   data-trae-ref="e24"
+                                                  >
++                                                   Doraemon Explains the MOE Architecture
+                                                  <p
+                                                    className="box-shadow-black overflow-hidden text-sm text-white/85 ..."
+-                                                   data-trae-ref="e25"
+                                                  >
++                                                   Generate a Doraemon comic strip explaining the MOE architecture to ...
+                                  <LinkComponent>
+                                    <LinkComponent href="/workspace..." target="_blank" rel="noopener n...">
+                                      <a
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        ref={function}
+                                        onClick={function onClick}
+                                        onMouseEnter={function onMouseEnter}
+                                        onTouchStart={function onTouchStart}
+                                        href="/workspace/chats/ad76c455-5bf9-4335-8517-fc03834ab828?mock=true"
+-                                       data-trae-ref="e9"
+                                      >
+                                        <Card>
+                                          <div data-slot="card" className="bg-card te...">
+                                            <img
+                                              alt="An Exploratory Data Analysis of the Titanic Dataset preview"
+                                              fetchPriority={undefined}
+                                              loading="lazy"
+                                              width={640}
+                                              height={360}
+                                              decoding="async"
+                                              data-nimg="1"
+                                              className="absolute inset-0 z-0 h-full w-full object-cover transition-al..."
+                                              style={{color:"transparent"}}
+                                              sizes="(min-width: 1024px) 320px, (min-width: 768px) 50vw, 100vw"
+                                              srcSet={"/_next/image?url=%2Fimages%2Fad76c455-5bf9-4335-8517-fc03834ab..."}
+                                              src={"/_next/image?url=%2Fimages%2Fad76c455-5bf9-4335-8517-fc03834ab828..."}
+                                              ref={function}
+                                              onLoad={function onLoad}
+                                              onError={function onError}
+-                                             data-trae-ref="e26"
+                                            >
+                                            <div className="relative z...">
+                                              <div className="flex w-ful..." style={{...}}>
+                                                <div className="flex flex-...">
+                                                  <h3
+                                                    className="flex h-14 items-center text-xl font-bold text-shadow-black"
+-                                                   data-trae-ref="e27"
+                                                  >
++                                                   An Exploratory Data Analysis of the Titanic Dataset
+                                                  <p
+                                                    className="box-shadow-black overflow-hidden text-sm text-white/85 ..."
+-                                                   data-trae-ref="e28"
+                                                  >
++                                                   Explore the Titanic dataset and identify the key factors that influ...
+                                  <LinkComponent>
+                                    <LinkComponent href="/workspace..." target="_blank" rel="noopener n...">
+                                      <a
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        ref={function}
+                                        onClick={function onClick}
+                                        onMouseEnter={function onMouseEnter}
+                                        onTouchStart={function onTouchStart}
+                                        href="/workspace/chats/d3e5adaf-084c-4dd5-9d29-94f1d6bccd98?mock=true"
+-                                       data-trae-ref="e10"
+                                      >
+                                        <Card>
+                                          <div data-slot="card" className="bg-card te...">
+                                            <img
+                                              alt={"Watch Y Combinator's Video then Conduct a Deep Research preview"}
+                                              fetchPriority={undefined}
+                                              loading="lazy"
+                                              width={640}
+                                              height={360}
+                                              decoding="async"
+                                              data-nimg="1"
+                                              className="absolute inset-0 z-0 h-full w-full object-cover transition-al..."
+                                              style={{color:"transparent"}}
+                                              sizes="(min-width: 1024px) 320px, (min-width: 768px) 50vw, 100vw"
+                                              srcSet={"/_next/image?url=%2Fimages%2Fd3e5adaf-084c-4dd5-9d29-94f1d6bcc..."}
+                                              src={"/_next/image?url=%2Fimages%2Fd3e5adaf-084c-4dd5-9d29-94f1d6bccd98..."}
+                                              ref={function}
+                                              onLoad={function onLoad}
+                                              onError={function onError}
+-                                             data-trae-ref="e29"
+                                            >
+                                            <div className="relative z...">
+                                              <div className="flex w-ful..." style={{...}}>
+                                                <div className="flex flex-...">
+                                                  <h3
+                                                    className="flex h-14 items-center text-xl font-bold text-shadow-black"
+-                                                   data-trae-ref="e30"
+                                                  >
++                                                   {"Watch Y Combinator's Video then Conduct a Deep Research"}
+                                                  <p
+                                                    className="box-shadow-black overflow-hidden text-sm text-white/85 ..."
+-                                                   data-trae-ref="e31"
+                                                  >
++                                                   {"Watch the given Y Combinator's YouTube video and conduct a dee..."}
+                                  <LinkComponent>
+                                    <LinkComponent href="/workspace..." target="_blank" rel="noopener n...">
+                                      <a
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        ref={function}
+                                        onClick={function onClick}
+                                        onMouseEnter={function onMouseEnter}
+                                        onTouchStart={function onTouchStart}
+                                        href="/workspace/chats/3823e443-4e2b-4679-b496-a9506eae462b?mock=true"
+-                                       data-trae-ref="e11"
+                                      >
+                                        <Card>
+                                          <div data-slot="card" className="bg-card te...">
+                                            <img
+                                              alt={"Collect and Summarize Dr. Fei Fei Li's Podcasts preview"}
+                                              fetchPriority={undefined}
+                                              loading="lazy"
+                                              width={640}
+                                              height={360}
+                                              decoding="async"
+                                              data-nimg="1"
+                                              className="absolute inset-0 z-0 h-full w-full object-cover transition-al..."
+                                              style={{color:"transparent"}}
+                                              sizes="(min-width: 1024px) 320px, (min-width: 768px) 50vw, 100vw"
+                                              srcSet={"/_next/image?url=%2Fimages%2F3823e443-4e2b-4679-b496-a9506eae4..."}
+                                              src={"/_next/image?url=%2Fimages%2F3823e443-4e2b-4679-b496-a9506eae462b..."}
+                                              ref={function}
+                                              onLoad={function onLoad}
+                                              onError={function onError}
+-                                             data-trae-ref="e32"
+                                            >
+                                            <div className="relative z...">
+                                              <div className="flex w-ful..." style={{...}}>
+                                                <div className="flex flex-...">
+                                                  <h3
+                                                    className="flex h-14 items-center text-xl font-bold text-shadow-black"
+-                                                   data-trae-ref="e33"
+                                                  >
++                                                   {"Collect and Summarize Dr. Fei Fei Li's Podcasts"}
+                                                  <p
+                                                    className="box-shadow-black overflow-hidden text-sm text-white/85 ..."
+-                                                   data-trae-ref="e34"
+                                                  >
++                                                   Collect all the podcast appearances of Dr. Fei Fei Li in the last 6...
+                              <SkillsSection>
+                              ...
+                                <section className="mx-auto fl...">
+                                  <header className="flex flex-...">
+                                    <div>
+                                    <div className="text-muted...">
+                                      <p
+-                                       data-trae-ref="e35"
+                                      >
++                                       {"We give TianShu a \"computer\", which can execute commands, manage files, ..."}
+                                  <main className="mt-4 w-ful...">
+                                    <div className="mt-8 flex ...">
+                                      <div>
+                                      <div className="w-full fle...">
+                                        <div className="space-y-4">
+                                          <p
+                                            className="text-sm font-medium tracking-wider text-purple-400 uppercase"
+-                                           data-trae-ref="e36"
+                                          >
++                                           Open-source
+                                          <h2
+                                            className="text-4xl font-bold tracking-tight lg:text-5xl"
+-                                           data-trae-ref="e37"
+                                          >
+                                            <a
+                                              href="https://github.com/agent-infra/sandbox"
+                                              target="_blank"
+                                              rel="noopener noreferrer"
+-                                             data-trae-ref="e12"
+                                            >
++                                             AIO Sandbox
+                                        <div className="space-y-4 ...">
+                                          <p
+-                                           data-trae-ref="e38"
+                                          >
+                                            <a
+                                              href="https://github.com/agent-infra/sandbox"
+                                              className="underline"
+                                              target="_blank"
+                                              rel="noopener noreferrer"
+-                                             data-trae-ref="e13"
+                                            >
++                                             All-in-One Sandbox
+                                            ...
+                                        ...
+                              <WhatsNewSection>
+                              ...
+                                <Slot.SlotClone data-slot="button" data-variant="default" data-size="lg" ...>
+                                  <LinkComponent href="https://gi..." target="_blank" rel="noopener n..." ...>
+                                    <a
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      data-slot="button"
+                                      data-variant="default"
+                                      data-size="lg"
+                                      className={"inline-flex items-center justify-center gap-2 whitespace-nowrap fon..."}
+                                      ref={function}
+                                      onClick={function onClick}
+                                      onMouseEnter={function onMouseEnter}
+                                      onTouchStart={function onTouchStart}
+                                      href="https://github.com/bytedance/tian-shu"
+-                                     data-trae-ref="e14"
+                                    >
+                            <Footer>
+                              <footer className="container-...">
+                                <hr>
+                                <div className="text-muted...">
+                                  <p
+                                    className="text-center font-serif text-lg md:text-xl"
+-                                   data-trae-ref="e39"
+                                  >
++                                   {"\"Originated from Open Source, give back to Open Source.\""}
+                                <div className="text-muted...">
+                                  <p
+-                                   data-trae-ref="e40"
+                                  >
++                                   Licensed under MIT License
+                                  <p
+-                                   data-trae-ref="e41"
+                                  >
+                      ...
+                    ...
+        ...
+ 
+ GET /workspace/chats/new 200 in 80ms (next.js: 56ms, application-code: 24ms)
+ GET /workspace/workspace 200 in 28ms (next.js: 10ms, application-code: 18ms)
+ GET /workspace/workspace 200 in 30ms (next.js: 10ms, application-code: 20ms)
+ GET /workspace/chats/new 200 in 62ms (next.js: 44ms, application-code: 18ms)
+✓ Compiled in 621ms
+ GET /workspace/chats/new 200 in 347ms (next.js: 235ms, application-code: 112ms)
+ GET / 200 in 589ms (next.js: 135ms, application-code: 454ms)
+ GET /workspace/chats/new 200 in 41ms (next.js: 7ms, application-code: 35ms)
+ GET / 200 in 349ms (next.js: 4ms, application-code: 345ms)
+ GET /workspace/chats/new 200 in 917ms (next.js: 48ms, application-code: 869ms)
+ GET /@vite/client 404 in 108ms (next.js: 19ms, application-code: 89ms)
+ GET /workspace/chats/new 200 in 76ms (next.js: 62ms, application-code: 13ms)
+ GET /workspace/chats/new 200 in 42ms (next.js: 8ms, application-code: 35ms)
+ GET /workspace/chats/new 200 in 154ms (next.js: 41ms, application-code: 113ms)
+ GET /@vite/client 404 in 42ms (next.js: 5ms, application-code: 38ms)
+[browser] [tian-shu] Dropped unsupported LangGraph run option: streamResumable (src/core/api/stream-mode.ts:48:15)
+ GET /workspace/workflows 200 in 55ms (next.js: 16ms, application-code: 39ms)
+ GET /workspace/workspace 200 in 73ms (next.js: 33ms, application-code: 40ms)
+ GET /workspace/chats/new 200 in 111ms (next.js: 83ms, application-code: 28ms)
+✓ Compiled in 1464ms
+ GET / 200 in 327ms (next.js: 224ms, application-code: 103ms)
+ GET /workspace/chats/new 200 in 379ms (next.js: 313ms, application-code: 65ms)
+✓ Compiled in 17.4s
+ GET /workspace/chats/new 200 in 7.2s (next.js: 2.1s, application-code: 5.1s)
+ GET / 200 in 7.9s (next.js: 423ms, application-code: 7.5s)
+ GET / 200 in 7.1s (next.js: 7ms, application-code: 7.1s)
+ GET / 200 in 7.0s (next.js: 48ms, application-code: 7.0s)
+ GET / 200 in 7.0s (next.js: 534ms, application-code: 6.5s)
+ GET / 200 in 1821ms (next.js: 500ms, application-code: 1321ms)
+ GET /workspace/chats/new 200 in 9.1s (next.js: 2.0s, application-code: 7.1s)
+ GET /workspace/chats/new 200 in 1282ms (next.js: 141ms, application-code: 1141ms)
+ GET / 200 in 667ms (next.js: 460ms, application-code: 208ms)
+ GET / 200 in 669ms (next.js: 501ms, application-code: 168ms)
+ GET / 200 in 189ms (next.js: 3ms, application-code: 186ms)
+ GET /workspace/chats/new 200 in 1374ms (next.js: 100ms, application-code: 1273ms)
+ GET / 200 in 169ms (next.js: 3ms, application-code: 166ms)
+ GET / 200 in 175ms (next.js: 4ms, application-code: 171ms)
+ GET / 200 in 177ms (next.js: 3ms, application-code: 174ms)
+ GET / 200 in 149ms (next.js: 5ms, application-code: 143ms)
+ GET / 200 in 162ms (next.js: 5ms, application-code: 158ms)
+ GET / 200 in 163ms (next.js: 27ms, application-code: 136ms)
+ GET / 200 in 110ms (next.js: 3ms, application-code: 108ms)
+ GET / 200 in 161ms (next.js: 3ms, application-code: 159ms)
+ GET / 200 in 162ms (next.js: 3ms, application-code: 159ms)
+ GET / 200 in 141ms (next.js: 4ms, application-code: 138ms)
+ GET / 200 in 164ms (next.js: 5ms, application-code: 158ms)
+ GET / 200 in 165ms (next.js: 33ms, application-code: 132ms)
+ GET / 200 in 207ms (next.js: 4ms, application-code: 203ms)
+ GET / 200 in 213ms (next.js: 3ms, application-code: 210ms)
+ GET / 200 in 212ms (next.js: 4ms, application-code: 208ms)
+ GET / 200 in 190ms (next.js: 3ms, application-code: 187ms)
+ GET / 200 in 209ms (next.js: 6ms, application-code: 203ms)
+ GET / 200 in 155ms (next.js: 7ms, application-code: 148ms)
+ GET / 200 in 175ms (next.js: 4ms, application-code: 171ms)
+ GET / 200 in 177ms (next.js: 3ms, application-code: 174ms)
+ GET / 200 in 174ms (next.js: 3ms, application-code: 172ms)
+ GET / 200 in 155ms (next.js: 3ms, application-code: 152ms)
+ GET / 200 in 125ms (next.js: 3ms, application-code: 122ms)
+ GET / 200 in 125ms (next.js: 35ms, application-code: 90ms)
+ GET / 200 in 69ms (next.js: 7ms, application-code: 62ms)
+ GET / 200 in 36ms (next.js: 4ms, application-code: 33ms)
+ GET /@vite/client 404 in 48ms (next.js: 18ms, application-code: 30ms)
+✓ Compiled in 874ms
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/zh-CN.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/zh-CN.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /workspace/chats/new 200 in 1428ms (next.js: 522ms, application-code: 906ms)
+ GET /workspace/chats/new 200 in 749ms (next.js: 52ms, application-code: 698ms)
+ GET / 200 in 1659ms (next.js: 189ms, application-code: 1470ms)
+ GET / 200 in 964ms (next.js: 84ms, application-code: 880ms)
+ GET / 200 in 819ms (next.js: 3ms, application-code: 815ms)
+ GET /workspace/chats/new 200 in 806ms (next.js: 7ms, application-code: 799ms)
+ GET / 200 in 208ms (next.js: 5ms, application-code: 204ms)
+ GET / 200 in 212ms (next.js: 7ms, application-code: 204ms)
+ GET / 200 in 185ms (next.js: 3ms, application-code: 182ms)
+ GET / 200 in 241ms (next.js: 4ms, application-code: 237ms)
+ GET / 200 in 244ms (next.js: 44ms, application-code: 200ms)
+ GET / 200 in 172ms (next.js: 4ms, application-code: 167ms)
+ GET / 200 in 144ms (next.js: 3ms, application-code: 141ms)
+ GET / 200 in 100ms (next.js: 7ms, application-code: 94ms)
+ GET / 200 in 60ms (next.js: 3ms, application-code: 58ms)
+ GET /@vite/client 404 in 179ms (next.js: 71ms, application-code: 107ms)
+✓ Compiled in 943ms
+✓ Compiled in 1037ms
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/zh-CN.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/zh-CN.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /workspace/chats/new 200 in 878ms (next.js: 432ms, application-code: 446ms)
+ GET / 200 in 1161ms (next.js: 149ms, application-code: 1013ms)
+ GET / 200 in 1280ms (next.js: 27ms, application-code: 1254ms)
+ GET / 200 in 629ms (next.js: 163ms, application-code: 466ms)
+ GET / 200 in 631ms (next.js: 89ms, application-code: 541ms)
+ GET / 200 in 662ms (next.js: 190ms, application-code: 472ms)
+ GET / 200 in 853ms (next.js: 3ms, application-code: 849ms)
+ GET /workspace/chats/new 200 in 831ms (next.js: 26ms, application-code: 805ms)
+ GET / 200 in 449ms (next.js: 6ms, application-code: 444ms)
+ GET / 200 in 204ms (next.js: 5ms, application-code: 199ms)
+ GET / 200 in 204ms (next.js: 34ms, application-code: 170ms)
+ GET / 200 in 100ms (next.js: 3ms, application-code: 97ms)
+ GET / 200 in 73ms (next.js: 3ms, application-code: 70ms)
+ GET / 200 in 40ms (next.js: 6ms, application-code: 35ms)
+ GET /@vite/client 404 in 45ms (next.js: 11ms, application-code: 34ms)
+✓ Compiled in 857ms
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/en-US.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/en-US.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /workspace/chats/new 200 in 658ms (next.js: 192ms, application-code: 466ms)
+ GET / 200 in 1319ms (next.js: 212ms, application-code: 1107ms)
+ GET / 200 in 895ms (next.js: 95ms, application-code: 799ms)
+ GET / 200 in 475ms (next.js: 12ms, application-code: 463ms)
+ GET / 200 in 475ms (next.js: 33ms, application-code: 442ms)
+⨯ Error: Module [project]/src/app/workspace/chats/[thread_id]/providers.tsx [app-ssr] (ecmascript) was instantiated because it was required from module [project]/node_modules/.pnpm/next@16.2.11_@opentelemetry_1ff9176e8da6511df0f67ea8f796d305/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { MODULE_0 => "[project]/src/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_1 => "[project]/node_modules/.pnpm/next@16.2.11_@opentelemetry_1ff9176e8da6511df0f67ea8f796d305/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/.pnpm/next@16.2.11_@opentelemetry_1ff9176e8da6511df0f67ea8f796d305/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/.pnpm/next@16.2.11_@opentelemetry_1ff9176e8da6511df0f67ea8f796d305/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/.pnpm/next@16.2.11_@opentelemetry_1ff9176e8da6511df0f67ea8f796d305/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/src/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>, but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at ignore-listed frames {
+  digest: '4198702048'
+}
+ GET / 200 in 512ms (next.js: 4ms, application-code: 508ms)
+ GET / 200 in 483ms (next.js: 4ms, application-code: 480ms)
+ GET /workspace/chats/new 500 in 872ms (next.js: 5ms, application-code: 867ms)
+ GET / 200 in 520ms (next.js: 3ms, application-code: 517ms)
+ GET / 200 in 567ms (next.js: 334ms, application-code: 233ms)
+ GET / 200 in 238ms (next.js: 26ms, application-code: 212ms)
+ GET / 200 in 162ms (next.js: 4ms, application-code: 157ms)
+ GET / 200 in 162ms (next.js: 61ms, application-code: 100ms)
+ GET / 200 in 65ms (next.js: 14ms, application-code: 51ms)
+✓ Compiled in 818ms
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/en-US.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/en-US.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /workspace/chats/new 200 in 1260ms (next.js: 509ms, application-code: 751ms)
+ GET / 200 in 2.3s (next.js: 186ms, application-code: 2.1s)
+ GET / 200 in 803ms (next.js: 102ms, application-code: 701ms)
+ GET /workspace/chats/new 200 in 659ms (next.js: 129ms, application-code: 530ms)
+ GET / 200 in 659ms (next.js: 5ms, application-code: 654ms)
+ GET / 200 in 659ms (next.js: 34ms, application-code: 625ms)
+ GET / 200 in 314ms (next.js: 4ms, application-code: 310ms)
+ GET / 200 in 220ms (next.js: 4ms, application-code: 216ms)
+ GET / 200 in 204ms (next.js: 4ms, application-code: 200ms)
+ GET / 200 in 177ms (next.js: 5ms, application-code: 172ms)
+ GET / 200 in 176ms (next.js: 67ms, application-code: 109ms)
+ GET / 200 in 177ms (next.js: 35ms, application-code: 143ms)
+ GET / 200 in 80ms (next.js: 4ms, application-code: 76ms)
+ GET / 200 in 30ms (next.js: 3ms, application-code: 27ms)
+ GET /@vite/client 404 in 68ms (next.js: 20ms, application-code: 48ms)
+✓ Compiled in 1036ms
+✓ Compiled in 859ms
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/zh-CN.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/zh-CN.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/zh-CN.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /workspace/chats/new 200 in 732ms (next.js: 224ms, application-code: 508ms)
+ GET / 200 in 1608ms (next.js: 239ms, application-code: 1369ms)
+ GET /workspace/chats/new 200 in 1184ms (next.js: 293ms, application-code: 891ms)
+ GET /workspace/chats/new 200 in 208ms (next.js: 53ms, application-code: 154ms)
+ GET / 200 in 1228ms (next.js: 672ms, application-code: 556ms)
+ GET / 200 in 562ms (next.js: 239ms, application-code: 323ms)
+ GET / 200 in 210ms (next.js: 4ms, application-code: 206ms)
+ GET / 200 in 205ms (next.js: 4ms, application-code: 201ms)
+ GET /workspace/chats/new 200 in 404ms (next.js: 92ms, application-code: 312ms)
+ GET / 200 in 201ms (next.js: 3ms, application-code: 198ms)
+ GET / 200 in 201ms (next.js: 16ms, application-code: 185ms)
+ GET / 200 in 162ms (next.js: 4ms, application-code: 158ms)
+ GET / 200 in 128ms (next.js: 5ms, application-code: 123ms)
+ GET / 200 in 97ms (next.js: 3ms, application-code: 94ms)
+ GET / 200 in 66ms (next.js: 5ms, application-code: 61ms)
+ GET / 200 in 37ms (next.js: 3ms, application-code: 34ms)
+ GET /@vite/client 404 in 44ms (next.js: 14ms, application-code: 30ms)
+✓ Compiled in 904ms
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/en-US.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/en-US.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/en-US.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /workspace/chats/new 200 in 1487ms (next.js: 484ms, application-code: 1003ms)
+ GET /workspace/chats/new 200 in 498ms (next.js: 58ms, application-code: 440ms)
+ GET / 200 in 1525ms (next.js: 178ms, application-code: 1346ms)
+ GET / 200 in 795ms (next.js: 160ms, application-code: 635ms)
+ GET / 200 in 804ms (next.js: 3ms, application-code: 801ms)
+ GET / 200 in 415ms (next.js: 4ms, application-code: 411ms)
+ GET /workspace/chats/new 200 in 797ms (next.js: 40ms, application-code: 757ms)
+ GET / 200 in 388ms (next.js: 33ms, application-code: 356ms)
+ GET / 200 in 391ms (next.js: 5ms, application-code: 386ms)
+ GET / 200 in 194ms (next.js: 6ms, application-code: 188ms)
+ GET / 200 in 152ms (next.js: 5ms, application-code: 148ms)
+ GET / 200 in 122ms (next.js: 5ms, application-code: 117ms)
+ GET / 200 in 90ms (next.js: 3ms, application-code: 87ms)
+ GET / 200 in 90ms (next.js: 25ms, application-code: 65ms)
+ GET / 200 in 91ms (next.js: 46ms, application-code: 45ms)
+ GET /@vite/client 404 in 561ms (next.js: 514ms, application-code: 48ms)
+✓ Compiled in 1008ms
+ GET /workspace/chats/new 200 in 389ms (next.js: 220ms, application-code: 169ms)
+ GET / 200 in 605ms (next.js: 105ms, application-code: 500ms)
+ GET / 200 in 420ms (next.js: 3ms, application-code: 417ms)
+ GET / 200 in 143ms (next.js: 4ms, application-code: 138ms)
+ GET / 200 in 143ms (next.js: 55ms, application-code: 88ms)
+ GET / 200 in 144ms (next.js: 26ms, application-code: 118ms)
+ GET / 200 in 174ms (next.js: 3ms, application-code: 171ms)
+ GET / 200 in 152ms (next.js: 3ms, application-code: 149ms)
+ GET / 200 in 124ms (next.js: 5ms, application-code: 119ms)
+ GET / 200 in 97ms (next.js: 62ms, application-code: 35ms)
+ GET / 200 in 99ms (next.js: 31ms, application-code: 68ms)
+ GET / 200 in 100ms (next.js: 3ms, application-code: 97ms)
+ GET /workspace/chats/new 200 in 209ms (next.js: 10ms, application-code: 199ms)
+ GET /workspace/chats/new 200 in 208ms (next.js: 5ms, application-code: 203ms)
+ GET /workspace/chats/new 200 in 178ms (next.js: 6ms, application-code: 173ms)
+ GET /workspace/chats/new 200 in 178ms (next.js: 84ms, application-code: 94ms)
+ GET /workspace/chats/new 200 in 179ms (next.js: 37ms, application-code: 143ms)
+ GET /workspace/chats/new 200 in 242ms (next.js: 60ms, application-code: 182ms)
+ GET /workspace/chats/new 200 in 190ms (next.js: 5ms, application-code: 185ms)
+ GET /workspace/chats/new 200 in 150ms (next.js: 39ms, application-code: 111ms)
+ GET /workspace/chats/new 200 in 73ms (next.js: 34ms, application-code: 39ms)
+ GET /workspace/chats/new 200 in 74ms (next.js: 6ms, application-code: 68ms)
+✓ Compiled in 573ms
+ GET / 200 in 227ms (next.js: 108ms, application-code: 120ms)
+ GET /workspace/chats/new 200 in 414ms (next.js: 303ms, application-code: 111ms)
+✓ Compiled in 683ms
+ GET / 200 in 212ms (next.js: 120ms, application-code: 93ms)
+ GET /workspace/chats/new 200 in 280ms (next.js: 217ms, application-code: 62ms)
+✓ Compiled in 596ms
+ GET / 200 in 180ms (next.js: 97ms, application-code: 83ms)
+ GET /workspace/chats/new 200 in 284ms (next.js: 203ms, application-code: 81ms)
+✓ Compiled in 498ms
+ GET / 200 in 194ms (next.js: 105ms, application-code: 89ms)
+ GET /workspace/chats/new 200 in 271ms (next.js: 200ms, application-code: 71ms)
+✓ Compiled in 500ms
+ GET / 200 in 173ms (next.js: 90ms, application-code: 83ms)
+ GET /workspace/chats/new 200 in 272ms (next.js: 189ms, application-code: 83ms)
+✓ Compiled in 532ms
+ GET / 200 in 179ms (next.js: 98ms, application-code: 81ms)
+ GET /workspace/chats/new 200 in 258ms (next.js: 192ms, application-code: 66ms)
+✓ Compiled in 533ms
+ GET /workspace/chats/new 200 in 911ms (next.js: 212ms, application-code: 699ms)
+ GET / 200 in 1096ms (next.js: 106ms, application-code: 990ms)
+ GET / 200 in 1163ms (next.js: 3ms, application-code: 1160ms)
+ GET /workspace/chats/new 200 in 902ms (next.js: 12ms, application-code: 890ms)
+ GET /@vite/client 404 in 56ms (next.js: 19ms, application-code: 37ms)
+✓ Compiled in 507ms
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 773ms (next.js: 110ms, application-code: 663ms)
+ GET / 200 in 792ms (next.js: 3ms, application-code: 789ms)
+ GET /workspace/chats/new 200 in 797ms (next.js: 215ms, application-code: 581ms)
+ GET /@vite/client 404 in 59ms (next.js: 20ms, application-code: 39ms)
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+✓ Compiled in 510ms
+ GET / 200 in 775ms (next.js: 99ms, application-code: 676ms)
+ GET / 200 in 805ms (next.js: 4ms, application-code: 801ms)
+ GET /workspace/chats/new 200 in 811ms (next.js: 215ms, application-code: 596ms)
+ GET /@vite/client 404 in 54ms (next.js: 17ms, application-code: 38ms)
+✓ Compiled in 486ms
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 244ms (next.js: 133ms, application-code: 111ms)
+✓ Compiled in 487ms
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ Error: Module [project]/src/app/workspace/chats/[thread_id]/providers.tsx [app-ssr] (ecmascript) was instantiated because it was required from module [project]/node_modules/.pnpm/next@16.2.11_@opentelemetry_1ff9176e8da6511df0f67ea8f796d305/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { MODULE_0 => "[project]/src/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_1 => "[project]/node_modules/.pnpm/next@16.2.11_@opentelemetry_1ff9176e8da6511df0f67ea8f796d305/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/.pnpm/next@16.2.11_@opentelemetry_1ff9176e8da6511df0f67ea8f796d305/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/.pnpm/next@16.2.11_@opentelemetry_1ff9176e8da6511df0f67ea8f796d305/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/.pnpm/next@16.2.11_@opentelemetry_1ff9176e8da6511df0f67ea8f796d305/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/src/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>, but the module factory is not available.
+This is often caused by a stale browser cache, misconfigured Cache-Control headers, or a service worker serving outdated responses.
+To fix this, make sure your Cache-Control headers allow revalidation of chunks and review your service worker configuration. As an immediate workaround, try hard-reloading the page, clearing the browser cache, or unregistering any service workers.
+    at ignore-listed frames {
+  digest: '1156428801'
+}
+ GET /workspace/chats/new 500 in 1692ms (next.js: 611ms, application-code: 1081ms)
+ GET / 200 in 1693ms (next.js: 372ms, application-code: 1322ms)
+ GET / 200 in 576ms (next.js: 106ms, application-code: 470ms)
+ GET / 200 in 63ms (next.js: 3ms, application-code: 60ms)
+ GET /@vite/client 404 in 50ms (next.js: 11ms, application-code: 39ms)
+[browser] Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template). 
+ GET /login 307 in 422ms (next.js: 143ms, application-code: 278ms)
+ GET /workspace 307 in 824ms (next.js: 464ms, application-code: 360ms)
+ GET /workspace/chats/new 200 in 387ms (next.js: 61ms, application-code: 326ms)
+ GET /@vite/client 404 in 32ms (next.js: 5ms, application-code: 27ms)
+ GET /workspace/settings 404 in 80ms (next.js: 13ms, application-code: 67ms)
+ GET /@vite/client 404 in 39ms (next.js: 4ms, application-code: 35ms)
+ GET /workspace/workspace 200 in 817ms (next.js: 232ms, application-code: 585ms)
+ GET /@vite/client 404 in 36ms (next.js: 5ms, application-code: 31ms)
+ GET /workspace/chats/new?settings=appearance 200 in 164ms (next.js: 47ms, application-code: 117ms)
+ GET /workspace/chats/new 200 in 66ms (next.js: 11ms, application-code: 54ms)
+ GET /@vite/client 404 in 69ms (next.js: 25ms, application-code: 44ms)
+ GET /workspace/chats/new 200 in 69ms (next.js: 43ms, application-code: 26ms)
+ GET /workspace/chats/new 200 in 78ms (next.js: 67ms, application-code: 11ms)
+ GET /workspace/chats/new 200 in 44ms (next.js: 10ms, application-code: 34ms)
+ GET /workspace/chats/new 200 in 185ms (next.js: 61ms, application-code: 124ms)
+ GET /@vite/client 404 in 56ms (next.js: 11ms, application-code: 45ms)
+✓ Compiled in 567ms
+ GET /workspace/chats/new 200 in 449ms (next.js: 266ms, application-code: 183ms)
+ GET /workspace/chats/new 200 in 111ms (next.js: 5ms, application-code: 106ms)
+ GET /workspace/chats/new 200 in 71ms (next.js: 5ms, application-code: 66ms)
+ GET /workspace/chats/new 200 in 73ms (next.js: 32ms, application-code: 40ms)
+✓ Compiled in 805ms
+ GET /workspace/chats/new 200 in 587ms (next.js: 281ms, application-code: 306ms)
+ GET /workspace/chats/new 200 in 206ms (next.js: 11ms, application-code: 195ms)
+ GET /workspace/chats/new 200 in 156ms (next.js: 7ms, application-code: 149ms)
+ GET /workspace/chats/new 200 in 157ms (next.js: 38ms, application-code: 119ms)
+ GET /workspace/chats/new 200 in 157ms (next.js: 70ms, application-code: 87ms)
+ GET /workspace/chats/new 200 in 157ms (next.js: 104ms, application-code: 54ms)
+✓ Compiled in 546ms
+ GET /workspace/chats/new 200 in 407ms (next.js: 231ms, application-code: 176ms)
+ GET /workspace/chats/new 200 in 107ms (next.js: 5ms, application-code: 101ms)
+ GET /workspace/chats/new 200 in 79ms (next.js: 36ms, application-code: 42ms)
+ GET /workspace/chats/new 200 in 79ms (next.js: 12ms, application-code: 67ms)
+✓ Compiled in 579ms
+ GET /workspace/chats/new 200 in 402ms (next.js: 222ms, application-code: 180ms)
+ GET /workspace/chats/new 200 in 112ms (next.js: 7ms, application-code: 104ms)
+ GET /workspace/chats/new 200 in 75ms (next.js: 6ms, application-code: 69ms)
+ GET /workspace/chats/new 200 in 75ms (next.js: 39ms, application-code: 36ms)
+ GET /workspace/agents 200 in 404ms (next.js: 349ms, application-code: 55ms)
+ GET /workspace/scheduled-tasks 200 in 260ms (next.js: 203ms, application-code: 57ms)
+ GET /workspace/workflows 200 in 297ms (next.js: 187ms, application-code: 110ms)
+ GET /workspace/workspace 200 in 246ms (next.js: 195ms, application-code: 51ms)
+[browser] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[browser] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+ GET /workspace/chats 200 in 768ms (next.js: 302ms, application-code: 466ms)
+ GET /@vite/client 404 in 61ms (next.js: 20ms, application-code: 41ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/workspace..." tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} ...>
+            <SegmentViewNode type="page" pagePath="workspace/...">
+              <SegmentTrieNode>
+              <ClientPageRoot Component={function ChatsPage} serverProvidedParams={{...}}>
+                <ChatsPage params={Promise} searchParams={Promise}>
+                  <WorkspaceContainer>
+                    <div className="flex h-scr...">
+                      <WorkspaceHeader>
+                        <header className="top-0 righ...">
+                          <div className="flex min-w...">
+                            <SidebarTrigger>
+                            <Breadcrumb>
+                              <nav
+                                aria-label="breadcrumb"
+                                data-slot="breadcrumb"
+-                               data-trae-ref="e17"
+                              >
+                                <BreadcrumbList>
+                                  <ol data-slot="breadcrumb..." className="text-muted...">
+                                    <BreadcrumbItem className="hidden md:...">
+                                      <li
+                                        data-slot="breadcrumb-item"
+                                        className="items-center gap-1.5 hidden md:block"
+-                                       data-trae-ref="e18"
+                                      >
+                                        ...
+                                          <Slot.SlotClone data-slot="breadcrumb..." className="hover:text..." ref={null}>
+                                            <LinkComponent href="/workspace" data-slot="breadcrumb..." ...>
+                                              <a
+                                                data-slot="breadcrumb-link"
+                                                className="hover:text-foreground transition-colors"
+                                                ref={function}
+                                                onClick={function onClick}
+                                                onMouseEnter={function onMouseEnter}
+                                                onTouchStart={function onTouchStart}
+                                                href="/workspace"
+-                                               data-trae-ref="e7"
+                                              >
++                                               Workspace
+                                    <BreadcrumbSeparator>
+                                    <BreadcrumbItem>
+                                      <li
+                                        data-slot="breadcrumb-item"
+                                        className="inline-flex items-center gap-1.5"
+-                                       data-trae-ref="e19"
+                                      >
+                                        ...
+                                          <Slot.SlotClone data-slot="breadcrumb..." className="hover:text..." ref={null}>
+                                            <LinkComponent href="/workspace..." data-slot="breadcrumb..." ...>
+                                              <a
+                                                data-slot="breadcrumb-link"
+                                                className="hover:text-foreground transition-colors"
+                                                ref={function}
+                                                onClick={function onClick}
+                                                onMouseEnter={function onMouseEnter}
+                                                onTouchStart={function onTouchStart}
+                                                href="/workspace/chats"
+-                                               data-trae-ref="e8"
+                                              >
++                                               Chats
+                          ...
+                            <Primitive.button aria-describedby={undefined} data-state="closed" data-slot="tooltip-tr..." ...>
+                              <Primitive.button.Slot aria-describedby={undefined} data-state="closed" ...>
+                                <Primitive.button.SlotClone aria-describedby={undefined} data-state="closed" ...>
+                                  <a
+                                    href="https://github.com/bytedance/tian-shu"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="opacity-75 transition hover:opacity-100"
+                                    aria-describedby={undefined}
+                                    data-state="closed"
+                                    data-slot="tooltip-trigger"
+                                    onPointerMove={function handleEvent}
+                                    onPointerLeave={function handleEvent}
+                                    onPointerDown={function handleEvent}
+                                    onFocus={function handleEvent}
+                                    onBlur={function handleEvent}
+                                    onClick={function handleEvent}
+                                    ref={function}
+-                                   data-trae-ref="e9"
+                                  >
+                      <WorkspaceBody>
+                        <main className="relative f...">
+                          <div className="flex h-ful...">
+                            <div className="flex size-...">
+                              <header className="flex shrin...">
+                                <Input type="search" className="h-12 w-ful..." placeholder="Search chats" ...>
+                                  <input
+                                    type="search"
+                                    data-slot="input"
+                                    className="file:text-foreground placeholder:text-muted-foreground selection:bg-pri..."
+                                    placeholder="Search chats"
+                                    autoFocus={true}
+                                    value=""
+                                    onChange={function onChange}
+-                                   data-trae-ref="e10"
+                                  >
+                              ...
+            ...
+          ...
+ 
+ GET /workspace/chats/7d4381b5-9260-40ea-a0bb-c9c703c8db88 200 in 91ms (next.js: 71ms, application-code: 20ms)
+ GET /workspace/chats/new 200 in 800ms (next.js: 87ms, application-code: 713ms)
+ GET /@vite/client 404 in 32ms (next.js: 4ms, application-code: 28ms)
+✓ Compiled in 687ms
+ GET /workspace/workspace 200 in 303ms (next.js: 172ms, application-code: 131ms)
+✓ Compiled in 654ms
+ GET /workspace/workspace 200 in 257ms (next.js: 102ms, application-code: 154ms)
+ GET /workspace/chats/new 200 in 1269ms (next.js: 860ms, application-code: 408ms)
+ GET /workspace/chats/new 200 in 76ms (next.js: 23ms, application-code: 53ms)
+✓ Compiled in 580ms
+ GET /workspace/workspace 200 in 190ms (next.js: 101ms, application-code: 89ms)
+ GET /workspace/chats/new 200 in 309ms (next.js: 222ms, application-code: 87ms)
+✓ Compiled in 603ms
+ GET /workspace/workspace 200 in 683ms (next.js: 101ms, application-code: 582ms)
+ GET /workspace/chats/new 200 in 699ms (next.js: 367ms, application-code: 332ms)
+✓ Compiled in 627ms
+ GET /workspace/chats/new 200 in 330ms (next.js: 238ms, application-code: 92ms)
+ GET /workspace/workspace 200 in 57ms (next.js: 18ms, application-code: 39ms)
+✓ Compiled in 524ms
+ GET /workspace/workspace 200 in 472ms (next.js: 108ms, application-code: 364ms)
+ GET /workspace/chats/new 200 in 475ms (next.js: 399ms, application-code: 76ms)
+✓ Compiled in 541ms
+ GET /workspace/workspace 200 in 470ms (next.js: 91ms, application-code: 378ms)
+ GET /workspace/chats/new 200 in 473ms (next.js: 399ms, application-code: 74ms)
+ GET /workspace/workspace 200 in 291ms (next.js: 252ms, application-code: 39ms)
+ GET /workspace/chats/new 200 in 293ms (next.js: 178ms, application-code: 116ms)
+ GET /workspace/workspace 200 in 44ms (next.js: 14ms, application-code: 29ms)
+ GET /workspace/chats/new 200 in 243ms (next.js: 123ms, application-code: 120ms)
+ GET /workspace/chats/new 200 in 256ms (next.js: 121ms, application-code: 135ms)
+ GET /workspace/workspace 200 in 61ms (next.js: 14ms, application-code: 47ms)
+ GET /workspace/workspace 200 in 251ms (next.js: 103ms, application-code: 148ms)
+ GET /workspace/chats/new 200 in 97ms (next.js: 44ms, application-code: 53ms)
+ GET /workspace/workspace 200 in 212ms (next.js: 95ms, application-code: 117ms)
+ GET /workspace/chats/new 200 in 212ms (next.js: 168ms, application-code: 44ms)
+✓ Compiled in 938ms
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/en-US.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/en-US.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/en-US.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/en-US.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/en-US.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/en-US.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /workspace/workspace 200 in 2.3s (next.js: 764ms, application-code: 1515ms)
+ GET /workspace/chats/new 200 in 2.5s (next.js: 521ms, application-code: 1957ms)
+ GET /workspace/chats/new 200 in 80ms (next.js: 39ms, application-code: 41ms)
+ GET /workspace/chats/new 200 in 1509ms (next.js: 106ms, application-code: 1403ms)
+ GET /workspace/workspace 200 in 1520ms (next.js: 284ms, application-code: 1237ms)
+ GET /workspace/workspace 200 in 1530ms (next.js: 240ms, application-code: 1290ms)
+ GET /workspace/chats/new 200 in 1521ms (next.js: 285ms, application-code: 1236ms)
+ GET /@vite/client 404 in 79ms (next.js: 18ms, application-code: 61ms)
+ GET /@vite/client 404 in 36ms (next.js: 6ms, application-code: 31ms)
+✓ Compiled in 860ms
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/zh-CN.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/zh-CN.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/zh-CN.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/zh-CN.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/zh-CN.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./src/core/i18n/locales/zh-CN.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /workspace/workspace 200 in 2.1s (next.js: 647ms, application-code: 1423ms)
+ GET /workspace/chats/new 200 in 2.1s (next.js: 414ms, application-code: 1682ms)
+ GET /workspace/chats/new 200 in 314ms (next.js: 83ms, application-code: 231ms)
+ GET /workspace/chats/new 200 in 1379ms (next.js: 215ms, application-code: 1164ms)
+ GET /workspace/workspace 200 in 1398ms (next.js: 307ms, application-code: 1091ms)
+ GET /workspace/workspace 200 in 1397ms (next.js: 314ms, application-code: 1083ms)
+ GET /workspace/chats/new 200 in 1397ms (next.js: 872ms, application-code: 525ms)
+ GET /@vite/client 404 in 49ms (next.js: 12ms, application-code: 37ms)
+ GET /@vite/client 404 in 45ms (next.js: 5ms, application-code: 40ms)
+✓ Compiled in 7.5s
+ GET /workspace/workspace 200 in 1524ms (next.js: 756ms, application-code: 768ms)
+ GET /workspace/workspace 200 in 263ms (next.js: 113ms, application-code: 149ms)
+ GET /workspace/chats/new 200 in 1524ms (next.js: 1088ms, application-code: 436ms)
+ GET /workspace/chats/new 200 in 72ms (next.js: 17ms, application-code: 55ms)
+✓ Compiled in 2.8s
+ GET /workspace/workspace 200 in 1086ms (next.js: 530ms, application-code: 556ms)
+ GET /workspace/chats/new 200 in 1093ms (next.js: 228ms, application-code: 865ms)
+ GET /workspace/workspace 200 in 398ms (next.js: 339ms, application-code: 59ms)
+ GET /workspace/chats/new 200 in 394ms (next.js: 146ms, application-code: 248ms)
+ GET /workspace/settings 404 in 213ms (next.js: 36ms, application-code: 177ms)
+ GET /@vite/client 404 in 31ms (next.js: 4ms, application-code: 27ms)
+ GET /settings 404 in 38ms (next.js: 5ms, application-code: 33ms)
+ GET /@vite/client 404 in 41ms (next.js: 5ms, application-code: 36ms)
+ GET /workspace/workspace 200 in 731ms (next.js: 13ms, application-code: 718ms)
+ GET /@vite/client 404 in 42ms (next.js: 5ms, application-code: 37ms)
+ GET /workspace/chats/new 200 in 141ms (next.js: 100ms, application-code: 41ms)

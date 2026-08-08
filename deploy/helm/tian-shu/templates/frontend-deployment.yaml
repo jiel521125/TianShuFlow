@@ -1,0 +1,75 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "tian-shu.fullname" . }}-frontend
+  namespace: {{ include "tian-shu.namespace" . }}
+  labels:
+    {{- include "tian-shu.labels" . | nindent 4 }}
+    app.kubernetes.io/component: frontend
+spec:
+  replicas: {{ .Values.frontend.replicas }}
+  selector:
+    matchLabels:
+      {{- include "tian-shu.selectorLabels" . | nindent 6 }}
+      app.kubernetes.io/component: frontend
+  template:
+    metadata:
+      labels:
+        {{- include "tian-shu.selectorLabels" . | nindent 8 }}
+        app.kubernetes.io/component: frontend
+    spec:
+      {{- include "tian-shu.imagePullSecrets" . | nindent 6 }}
+      securityContext:
+        # Non-root: node:22-alpine ships a `node` user (uid 1000). fsGroup 1000
+        # is harmless here (no PVC) but keeps the pod spec uniform.
+        runAsNonRoot: true
+        runAsUser: 1000
+        runAsGroup: 1000
+        fsGroup: 1000
+        seccompProfile:
+          type: RuntimeDefault
+      containers:
+        - name: frontend
+          image: {{ include "tian-shu.frontendImage" . }}
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          securityContext:
+            allowPrivilegeEscalation: false
+            capabilities:
+              drop: ["ALL"]
+          workingDir: /app/frontend
+          args: ["pnpm", "start"]
+          ports:
+            - name: http
+              containerPort: 3000
+          env:
+            - name: NODE_ENV
+              value: production
+            - name: TIAN_SHU_INTERNAL_GATEWAY_BASE_URL
+              value: http://gateway:8001
+            - name: BETTER_AUTH_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "tian-shu.appSecret" . }}
+                  key: BETTER_AUTH_SECRET
+          readinessProbe:
+            tcpSocket:
+              port: http
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            tcpSocket:
+              port: http
+            initialDelaySeconds: 30
+            periodSeconds: 20
+          {{- with .Values.frontend.resources }}
+          resources:
+            {{- toYaml . | nindent 12 }}
+          {{- end }}
+          volumeMounts:
+            # Next.js writes runtime cache to .next/cache; the dir is root-owned
+            # in the prod image, so mount an emptyDir to make it writable by 1000.
+            - name: next-cache
+              mountPath: /app/frontend/.next/cache
+      volumes:
+        - name: next-cache
+          emptyDir: {}

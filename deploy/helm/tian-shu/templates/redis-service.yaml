@@ -1,0 +1,19 @@
+{{- if .Values.redis.enabled -}}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "tian-shu.redisFullname" . }}
+  namespace: {{ include "tian-shu.namespace" . }}
+  labels:
+    {{- include "tian-shu.labels" . | nindent 4 }}
+    app.kubernetes.io/component: redis
+spec:
+  type: ClusterIP
+  ports:
+    - name: tcp-redis
+      port: 6379
+      targetPort: tcp-redis
+  selector:
+    {{- include "tian-shu.selectorLabels" . | nindent 4 }}
+    app.kubernetes.io/component: redis
+{{- end -}}

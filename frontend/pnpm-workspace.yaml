@@ -1,0 +1,8 @@
+packages: []
+
+ignoredBuiltDependencies:
+  - esbuild
+  - sharp
+  - unrs-resolver
+
+storeDir: e:\QClaw\DeerFlow\.pnpm-store

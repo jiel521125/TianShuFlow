@@ -1,0 +1,85 @@
+TianShu — Multi-Tenant Super-Agent Workbench
+Copyright (c) 2025 Bytedance Ltd. and/or its affiliates (DeerFlow upstream)
+Copyright (c) 2025-2026 TianShu Authors (this fork / secondary development)
+
+This project is a **secondary development based on the DeerFlow open-source project**
+(https://github.com/bytedance/deer-flow) maintained by ByteDance Ltd. and its
+affiliates. The upstream DeerFlow code is licensed under the MIT License (see
+the section below).
+
+----------------------------------------------------------------------
+1. License of the upstream DeerFlow project (MIT)
+----------------------------------------------------------------------
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+IN THE SOFTWARE.
+
+----------------------------------------------------------------------
+2. Additional terms for the TianShu secondary-development portions
+----------------------------------------------------------------------
+
+The TianShu authors have performed **substantial modifications** on top of
+the DeerFlow upstream to deliver a multi-tenant, fully-isolated,
+enterprise-oriented agent workbench (see README.md for the list of new
+features and changes). These TianShu-specific modifications, additions, and
+derivative works are:
+
+  (a) Released only for **personal learning, research, and non-commercial**
+      evaluation. You may download, build, run, study, and modify the source
+      code on your own machine for personal, non-commercial purposes only.
+
+  (b) **Commercial use is NOT permitted** under this license. "Commercial
+      use" includes, without limitation:
+        - using the software (or any modified version) to provide any
+          product or service to third parties, whether or not for a fee;
+        - integrating the software (in whole or in part) into any
+          commercial product, SaaS offering, or internal production
+          service that supports the operations of a for-profit
+          organization;
+        - selling, hosting-as-a-service, or charging for access to the
+          software or any service built on top of it.
+
+  (c) If you wish to use this project (or any modified version of it) for
+      any commercial purpose, **you must obtain a separate written
+      commercial license from the TianShu authors first**. Please contact
+      the maintainers to discuss licensing terms.
+
+  (d) The attribution and copyright notices above, the link to the
+      upstream DeerFlow project, and these additional terms must be kept
+      intact in all copies or substantial portions of the software.
+
+  (e) The upstream DeerFlow MIT terms above continue to apply to all
+      portions of the software that originate from the DeerFlow project.
+      Where there is any conflict between the DeerFlow MIT terms and
+      these additional TianShu terms, the TianShu terms apply to the
+      TianShu-modified portions only and do not override the DeerFlow
+      terms for the upstream DeerFlow portions.
+
+----------------------------------------------------------------------
+3. Summary
+----------------------------------------------------------------------
+
+  - Personal learning / research / non-commercial use: ALLOWED.
+  - Commercial use: NOT ALLOWED without prior written permission from
+    the TianShu authors.
+  - For commercial licensing inquiries, please open an issue in this
+    repository or contact the maintainers.
+
+The MIT permission above is preserved unchanged for the upstream DeerFlow
+portions and, together with the additional terms above, constitutes the
+complete license for this combined work.

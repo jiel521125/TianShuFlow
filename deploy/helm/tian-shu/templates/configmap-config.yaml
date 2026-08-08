@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "tian-shu.fullname" . }}-config
+  namespace: {{ include "tian-shu.namespace" . }}
+  labels:
+    {{- include "tian-shu.labels" . | nindent 4 }}
+data:
+  config.yaml: |
+{{ .Values.config | default "" | indent 4 }}

@@ -1,0 +1,19 @@
+{{- if .Values.provisioner.enabled -}}
+apiVersion: v1
+kind: Service
+metadata:
+  name: provisioner
+  namespace: {{ include "tian-shu.namespace" . }}
+  labels:
+    {{- include "tian-shu.labels" . | nindent 4 }}
+    app.kubernetes.io/component: provisioner
+spec:
+  type: ClusterIP
+  ports:
+    - name: http
+      port: 8002
+      targetPort: http
+  selector:
+    {{- include "tian-shu.selectorLabels" . | nindent 4 }}
+    app.kubernetes.io/component: provisioner
+{{- end -}}

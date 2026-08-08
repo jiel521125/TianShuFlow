@@ -1,0 +1,258 @@
+# MCP (Model Context Protocol) Configuration
+
+TianShu supports configurable MCP servers and skills to extend its capabilities, which are loaded from a dedicated `extensions_config.json` file in the project root directory.
+
+## Setup
+
+1. Copy `extensions_config.example.json` to `extensions_config.json` in the project root directory.
+   ```bash
+   # Copy example configuration
+   cp extensions_config.example.json extensions_config.json
+   ```
+   
+2. Enable the desired MCP servers or skills by setting `"enabled": true`.
+3. Configure each server’s command, arguments, and environment variables as needed.
+4. Restart the application to load and register MCP tools.
+
+## Routing Hints
+
+Use `routing` when an MCP server should be preferred for specific requests, such
+as internal database questions that should use a PostgreSQL MCP tool before web
+search. Routing hints are soft model guidance: they add a
+`<mcp_routing_hints>` prompt section, but they do not forbid other tools. Use
+agent-level allow/deny policy for hard restrictions. If `tool_search.enabled`
+defers MCP tool schemas, matching routing metadata can also auto-promote the
+deferred schema before the model call. Auto-promotion is controlled by the
+top-level `config.yaml -> tool_search.auto_promote_top_k` setting.
+
+```json
+{
+   "mcpServers": {
+      "postgres": {
+         "enabled": true,
+         "type": "stdio",
+         "command": "npx",
+         "args": ["-y", "@modelcontextprotocol/server-postgres", "postgresql://localhost/mydb"],
+         "routing": {
+            "mode": "prefer",
+            "priority": 50,
+            "keywords": ["orders", "users", "SQL", "database", "table"]
+         },
+         "tools": {
+            "query": {
+               "routing": {
+                  "mode": "prefer",
+                  "priority": 100,
+                  "keywords": ["query database", "orders table", "metrics"]
+               }
+            }
+         }
+      }
+   }
+}
+```
+
+- `routing.mode`: `off` disables hints; `prefer` emits hints.
+- `routing.priority`: `0` to `100`; higher-priority hints are rendered first.
+  When `tool_search.enabled=true`, priority also orders auto-promote matches.
+- `routing.keywords`: operator-authored terms that describe when to prefer the
+  MCP tool. Empty keywords are allowed but do not emit a hint line and do not
+  trigger auto-promotion. Auto-promote matching is a case-insensitive substring
+  test against the latest user message (not token/word-boundary matching), so
+  prefer distinctive keywords — a short term like `api` also matches `rapid`.
+  Over-matching only exposes an extra tool schema (soft/additive), never
+  disables other tools.
+- `tools.<original_tool_name>.routing`: overrides only the fields explicitly
+  set for that tool. The key is the MCP server's original tool name, before the
+  `<server>_` prefix added for model binding. If the server-level
+  `routing.mode` is `off`, a tool override must set `mode: "prefer"`; setting
+  only `priority` or `keywords` still inherits `off` and emits no hint.
+- `tool_search.auto_promote_top_k`: global limit for auto-promoted deferred MCP
+  schemas per model call. Default `3`; valid range `1..5`.
+
+## Tool Name Prefixes
+
+TianShu prefixes discovered MCP tool names with `<server_name>_` by default.
+This avoids collisions when two enabled servers expose tools with the same
+name. A server that already namespaces its own tools can opt out:
+
+```json
+{
+  "mcpServers": {
+    "semantic-scholar": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["s2-mcp-server"],
+      "tool_name_prefix": false
+    }
+  }
+}
+```
+
+With this setting, a server tool named `semantic_scholar_search_papers` keeps
+that name instead of becoming
+`semantic-scholar_semantic_scholar_search_papers`. The default is `true` for
+backward compatibility. Disable it only when every resulting tool name remains
+unique across the enabled servers. Stdio tools continue to use TianShu's
+persistent per-thread session pool regardless of this setting.
+
+## Per-Tool Timeout (Stdio MCP Servers)
+
+For `stdio` MCP servers, set `tool_call_timeout` to limit each individual MCP tool call in seconds:
+
+```json
+{
+   "mcpServers": {
+      "github": {
+         "enabled": true,
+         "type": "stdio",
+         "command": "npx",
+         "args": ["-y", "@modelcontextprotocol/server-github"],
+         "env": {
+            "GITHUB_TOKEN": "$GITHUB_TOKEN"
+         },
+         "tool_call_timeout": 60
+      }
+   }
+}
+```
+
+`tool_call_timeout` only applies to `stdio` servers. `http` and `sse` servers use transport-level timeouts, and TianShu logs a warning if `tool_call_timeout` is configured for those transports.
+
+## Filesystem MCP Servers
+
+TianShu already provides built-in file tools for thread-scoped workspace access.
+Do not add an MCP filesystem server for the same TianShu workspace. The
+overlapping file tools use different path semantics, which can make LLM tool
+selection and file access behavior unstable.
+
+TianShu does not currently adapt the MCP Roots mode for filesystem servers. In
+particular, it does not publish per-thread MCP roots or map TianShu sandbox
+paths such as `/mnt/user-data/...` to paths accepted by
+`@modelcontextprotocol/server-filesystem`. Use TianShu's built-in file tools
+for TianShu workspace files.
+
+## OAuth Support (HTTP/SSE MCP Servers)
+
+For `http` and `sse` MCP servers, TianShu supports OAuth token acquisition and automatic token refresh.
+
+- Supported grants: `client_credentials`, `refresh_token`
+- Configure per-server `oauth` block in `extensions_config.json`
+- Secrets should be provided via environment variables (for example: `$MCP_OAUTH_CLIENT_SECRET`)
+
+Example:
+
+```json
+{
+   "mcpServers": {
+      "secure-http-server": {
+         "enabled": true,
+         "type": "http",
+         "url": "https://api.example.com/mcp",
+         "oauth": {
+            "enabled": true,
+            "token_url": "https://auth.example.com/oauth/token",
+            "grant_type": "client_credentials",
+            "client_id": "$MCP_OAUTH_CLIENT_ID",
+            "client_secret": "$MCP_OAUTH_CLIENT_SECRET",
+            "scope": "mcp.read",
+            "refresh_skew_seconds": 60
+         }
+      }
+   }
+}
+```
+
+## Custom Tool Interceptors
+
+You can register custom interceptors that run before every MCP tool call. This is useful for injecting per-request headers (e.g., user auth tokens from the LangGraph execution context), logging, or metrics.
+
+Declare interceptors in `extensions_config.json` using the `mcpInterceptors` field:
+
+```json
+{
+  "mcpInterceptors": [
+    "my_package.mcp.auth:build_auth_interceptor"
+  ],
+  "mcpServers": { ... }
+}
+```
+
+Each entry is a Python import path in `module:variable` format (resolved via `resolve_variable`). The variable must be a **no-arg builder function** that returns an async interceptor compatible with `MultiServerMCPClient`’s `tool_interceptors` interface, or `None` to skip.
+
+Example interceptor that injects an authorization header from the request-scoped
+LangGraph secret context:
+
+```python
+from langgraph.config import get_config
+
+
+def build_auth_interceptor():
+    async def interceptor(request, handler):
+        config = get_config()
+        secrets = (config.get("context") or {}).get("secrets") or {}
+        token = secrets.get("MCP_AUTH_TOKEN")
+        if token:
+            request = request.override(
+                headers={**(request.headers or {}), "Authorization": f"Bearer {token}"}
+            )
+        return await handler(request)
+
+    return interceptor
+```
+
+Supply the credential on each run request through `config.context.secrets`:
+
+```json
+{
+  "metadata": {"source": "my-client"},
+  "config": {
+    "context": {
+      "secrets": {"MCP_AUTH_TOKEN": "<request-scoped credential>"}
+    }
+  }
+}
+```
+
+Both `metadata.auth_token` and `config.metadata.auth_token` are rejected with HTTP 422 at run admission and are never supported
+interceptor paths. Do not put credentials in either metadata surface; use
+`config.context.secrets`, whose values remain available to the live interceptor
+but are removed from persisted and API-visible run configuration copies.
+
+- A single string value is accepted and normalized to a one-element list.
+- Invalid paths or builder failures are logged as warnings without blocking other interceptors.
+- The builder return value must be `callable`; non-callable values are skipped with a warning.
+
+### Migrating legacy MCP credentials
+
+Deployments that previously sent `metadata.auth_token` or `config.metadata.auth_token` must:
+
+1. Update the caller and interceptor to use `config.context.secrets` as shown
+   above.
+2. Rotate the exposed credential before resuming authenticated MCP traffic.
+3. Locate and remove every retained legacy copy according to the deployment's
+   retention policy, including database rows, run events, application or proxy
+   logs, snapshots, exports, and backups.
+
+Current history APIs hide legacy `metadata.auth_token` and `config.metadata.auth_token` values, but hiding a response does not erase
+material already retained by those systems. Restarting or upgrading TianShu does
+not rotate credentials or perform historical cleanup; operators must complete
+both actions explicitly.
+
+## How It Works
+
+MCP servers expose tools that are automatically discovered and integrated into TianShu’s agent system at runtime. Once enabled, these tools become available to agents without additional code changes.
+
+## Example Capabilities
+
+MCP servers can provide access to:
+
+- **Databases** (e.g., PostgreSQL)
+- **External APIs** (e.g., GitHub, Brave Search)
+- **Browser automation** (e.g., Puppeteer)
+- **Custom MCP server implementations**
+
+## Learn More
+
+For detailed documentation about the Model Context Protocol, visit:  
+https://modelcontextprotocol.io

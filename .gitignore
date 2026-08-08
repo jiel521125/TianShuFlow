@@ -1,0 +1,93 @@
+# TianShu docker image cache
+docker/.cache/
+# oh-my-claudecode state
+.omc/
+# OS generated files
+.DS_Store
+*.local
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+.venv
+venv/
+
+# Benchmark outputs
+bench_results.jsonl
+bench_optimized.jsonl
+results.jsonl
+backend/scripts/benchmark/*.jsonl
+
+# Environment variables
+.env
+
+# Configuration files
+config.yaml
+mcp_config.json
+extensions_config.json
+
+# IDE
+.idea/
+.vscode/
+
+# Coverage report
+coverage.xml
+coverage/
+.tian-shu/
+.claude/
+skills/custom/*
+logs/
+log/
+debug.log
+
+# Local git hooks (keep only on this machine, do not push)
+.githooks/
+
+# pnpm
+.pnpm-store
+sandbox_image_cache.tar
+
+# ignore the legacy `web` folder
+web/
+
+# Deployment artifacts
+backend/Dockerfile.langgraph
+config.yaml.bak
+.playwright-mcp
+/frontend/test-results/
+/frontend/playwright-report/
+.gstack/
+.worktrees
+
+# Monocle agent-observability trace output (local file exporter)
+.monocle/
+
+# -------------------------------------------------------------------
+# Local-only state that MUST NOT be published to Git (added 2026-08-08
+# when preparing the public release of this TianShu secondary dev).
+# Each entry is local-only data with no value to other contributors
+# and may leak machine paths, secrets, or large binaries if shipped.
+# -------------------------------------------------------------------
+
+# Local agent / IDE configuration
+.agent/                       # Trae agent skills (machine-local)
+.trae/                        # Trae IDE state (memory logs, e2e attachments)
+.ruff_cache/                  # ruff lint cache
+.run-logs/                    # quick-start.ps1 backend/frontend logs
+
+# Local-only code-workspace file (path-bound, single developer)
+tian-shu.code-workspace
+
+# Per-machine quick-start environment file (may carry secrets / paths)
+quick-start.env
+
+# Per-machine app config (carries API keys, DSNs) - keep example only
+config.yaml

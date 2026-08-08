@@ -1,0 +1,19 @@
+{{- if .Values.postgresql.enabled -}}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "tian-shu.postgresFullname" . }}
+  namespace: {{ include "tian-shu.namespace" . }}
+  labels:
+    {{- include "tian-shu.labels" . | nindent 4 }}
+    app.kubernetes.io/component: postgres
+spec:
+  type: ClusterIP
+  ports:
+    - name: tcp-postgres
+      port: 5432
+      targetPort: tcp-postgres
+  selector:
+    {{- include "tian-shu.selectorLabels" . | nindent 4 }}
+    app.kubernetes.io/component: postgres
+{{- end -}}
